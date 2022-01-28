@@ -1,0 +1,16 @@
+footer {
+    position: sticky;
+    margin-top: 72px; 
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    color: #858796;
+    text-align: left;
+    caption-side: bottom;
+    top: 100%;
+    bottom: 0;
+    background-color: #f8f9fc;
+}
+
+h5{
+    font-weight: bold;
+}

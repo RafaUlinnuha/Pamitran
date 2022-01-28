@@ -67,28 +67,28 @@
                 <div class="col-12 col-lg-3 mb-4">
                     <div class="border p-3 text-center">
                         <h3 class="py-2">Satu</h3>
-                        <button class="btn btn-outline-dark">Read More</button>
+                        <button class="btn btn-outline-dark" onclick="document.location='/layanan/satu'">Read More</button>
                     </div>
                 </div>
 
                 <div class="col-12 col-lg-3 mb-4">
                     <div class="border p-3 text-center">
                         <h3 class="py-2">Dua</h3>
-                        <button class="btn btn-outline-dark">Read More</button>
+                        <button class="btn btn-outline-dark" onclick="document.location='/layanan/dua'">Read More</button>
                     </div>
                 </div>
                 
                 <div class="col-12 col-lg-3 mb-4">
                     <div class="border p-3 text-center">
                         <h3 class="py-2">Tiga</h3>
-                        <button class="btn btn-outline-dark">Read More</button>
+                        <button class="btn btn-outline-dark" onclick="document.location='/layanan/tiga'">Read More</button>
                     </div>
                 </div>
                 
                 <div class="col-12 col-lg-3 mb-4">
                     <div class="border p-3 text-center">
                         <h3 class="py-2">Empat</h3>
-                        <button class="btn btn-outline-dark">Read More</button>
+                        <button class="btn btn-outline-dark" onclick="document.location='/layanan/empat'">Read More</button>
                     </div>
                 </div>
             </div>
@@ -96,28 +96,28 @@
                 <div class="col-12 col-lg-3 mb-4">
                     <div class="border p-3 text-center">
                         <h3 class="py-2">Lima</h3>
-                        <button class="btn btn-outline-dark">Read More</button>
+                        <button class="btn btn-outline-dark" onclick="document.location='/layanan/lima'">Read More</button>
                     </div>
                 </div>
 
                 <div class="col-12 col-lg-3 mb-4">
                     <div class="border p-3 text-center">
                         <h3 class="py-2">Enam</h3>
-                        <button class="btn btn-outline-dark">Read More</button>
+                        <button class="btn btn-outline-dark" onclick="document.location='/layanan/enam'">Read More</button>
                     </div>
                 </div>
                 
                 <div class="col-12 col-lg-3 mb-4">
                     <div class="border p-3 text-center">
                         <h3 class="py-2">Tujuh</h3>
-                        <button class="btn btn-outline-dark">Read More</button>
+                        <button class="btn btn-outline-dark" onclick="document.location='/layanan/tujuh'">Read More</button>
                     </div>
                 </div>
                 
                 <div class="col-12 col-lg-3 mb-4">
                     <div class="border p-3 text-center">
                         <h3 class="py-2">Delapan</h3>
-                        <button class="btn btn-outline-dark">Read More</button>
+                        <button class="btn btn-outline-dark" onclick="document.location='/layanan/delapan'">Read More</button>
                     </div>
                 </div>
             </div>
