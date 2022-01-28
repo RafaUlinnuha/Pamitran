@@ -18,7 +18,7 @@
                     <i class="fa fa-envelope" aria-hidden="true"></i> JohnDoe@gmail.com
                 </p>
                 <p>
-                    <i class="fa fa-phone" aria-hidden="true"></i>+62 123 456 789
+                    <i class="fa fa-phone" aria-hidden="true"></i> +62 123 456 789
                 </p>
             </div>
         </div>
