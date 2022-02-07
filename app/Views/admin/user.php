@@ -1,69 +1,74 @@
 <?php
-	$session = session();
-	$errors = $session->getFlashdata('errors');
-	$success = $session->getFlashdata('success');
+	$this->session = session();
+    $success = $this->session->getFlashdata('success');
+    
+    if(!$this->session->level==1){
+        echo "<script>history.go(-1);</script>";
+        die(); 
+    }
 ?>
 
-<?= $this->extend('/base'); ?>
+<?= $this->extend('/layout/base'); ?>
 
 <?= $this->section('custom_css') ?>
     <link rel="stylesheet" href="<?= base_url('assets/css/user.css') ?>">
 <?= $this->endSection('custom_css') ?>
 
 <?= $this->section('content'); ?>
-    <header class="title">
-        <h1>Daftar User</h1>
-    </header>
+
     <div class="container mt-3">
-        <?php if(session()->get('success')) : ?>
-            <div class="col-12">
-                <div class="alert alert-success" role="alert">
-                    <?= session()->get('success') ?>
-                </div>
-            </div>
+        <header class="title mt-2">
+            <h1>Manage User</h1>
+        </header>
+
+        <?php if ($this->session->get('success')) : ?>
+            <div id="swal" data-swal="<?= $this->session->get('success'); ?>"></div>
         <?php endif; ?>
 
-        <?php if (session()->get('errors')) : ?>
-            <div class="col-12">
-                <div class="alert alert-danger" role="alert">
-                    <?= session()->get('errors') ?>
-                </div>
+        <div class="row">
+            <div class="col-md-8 p-2">
+                <button class="btn btn-primary" onclick="location.href='/admin/add_admin';" type="button"> Add Admin</button>
             </div>
-        <?php endif; ?>
-        <div class="table-responsive">
-            <table id="user" class="table table-striped table-bordered text-center mt-3">
-                <thead>
-                    <tr>
-                        <th>No</th>
-                        <th>Id</th>
-                        <th>Nama</th>
-                        <th>Email</th>
-                        <th>Nomor Telepon</th>
-                        <th colspan="2">Aksi</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php $i = 1; ?>
-                    <?php foreach ($results as $result) : ?>
+            <div class="col-md-4 p-2">
+                <form action="" autocomplete="off" method="POST">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Insert keyword" name="keyword">
+                        <button class="btn btn-outline-secondary" type="submit" id="submit" name="submit">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="table-responsive">
+                <table id="user" class="table table-striped table-bordered table-hover text-center mt-3">
+                    <thead>
                         <tr>
-                            <td><?= $i; ?></td>
-                            <td style="text-align: left;"><?= $result['id']; ?></td>
-                            <td style="text-align: left;"><?= $result['nama']; ?></td>
-                            <td style="text-align: left;"><?= $result['email']; ?></td>
-                            <td style="text-align: left;"><?= $result['phone']; ?></td>
-                            <td><a href="/user/edit/<?= $result['id']; ?>" class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
-                            <td><a href="/user/delete/<?= $result['id']; ?>" class="delete"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+                            <th>No</th>
+                            <th>Nama</th>
+                            <th>Email</th>
+                            <th>Aksi</th>
                         </tr>
-                    <?php $i++; ?>
-                    <?php endforeach; ?>
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        <?php $i = 1 + (5 * ($currentPage - 1)); ?>
+                        <?php foreach ($user as $result) : ?>
+                            <tr>
+                                <td><?= $i; ?></td>
+                                <td style="text-align: left;"><?= $result['nama']; ?></td>
+                                <td style="text-align: left;"><?= $result['email']; ?></td>
+                                <td><button class="btn btn-success" onclick="location.href='/admin/<?= $result['id']; ?>';" type="button"> Detail</button></td>
+                            </tr>
+                        <?php $i++; ?>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
+            <?= $pager->links('users', 'admin_pagination'); ?>
         </div>
     </div>
-    <?php 
-        if(!$session==1){
-            echo "<script>alert('Maaf Pengguna Harus Admin');history.go(-1);</script>";
-            die(); 
-        }
-    ?>
+
+    <?= $this->section('custom_js') ?>
+        <script src="<?= base_url('assets/js/user.js') ?>"></script>
+    <?= $this->endSection('custom_js') ?>
+
 <?= $this->endSection('content'); ?>

@@ -1,4 +1,4 @@
-<?= $this->extend('/base'); ?>
+<?= $this->extend('/layout/base'); ?>
 
 <?= $this->section('custom_css') ?>
     <link rel="stylesheet" href="<?= base_url('assets/css/layanan.css') ?>">

@@ -4,8 +4,19 @@ namespace App\Controllers;
 
 class Tentang extends BaseController
 {
-    public function index()
+    public function visi_misi()
     {
-        return view('/pages/tentang');
+        $data = [
+            'title' => 'Visi Misi'
+        ];
+        return view('/pages/visi_misi', $data);
+    }
+
+    public function tim_pamitran()
+    {
+        $data = [
+            'title' => 'Tim Pamitran'
+        ];
+        return view('/pages/tim_pamitran', $data);
     }
 }

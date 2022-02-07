@@ -13,93 +13,67 @@ class User extends Controller
     public function __construct()
     {
         helper(['form', 'url']);
+        $this->session = session();
         $this->userModel = new ManageUserModel();
     }
 
     public function index()
     {
-        $user = $this->userModel->getUser();
         $data = [
-            'results' => $user,
+            'title' => 'My Account',
+            'user' => $this->userModel->where('id', $this->session->id)->first()
         ];
-        
-        return view('admin/user', $data);
+        return view('user/profile', $data);
     }
 
-    
-    public function save()
+    public function edit()
     {
-        $data = [];
+        $id = $this->request->getPost('id');
+        $data = [
+            'title' => 'Edit Account',
+            'user' => $this->userModel->getUser($id)->getRow()
+        ];
+
         if ($this->request->getMethod() == 'post'){
+            $old_id = $this->userModel->getUser($id)->getRow();
+            if($old_id->email == $this->request->getPost('email')){
+                $rule_email = 'required|valid_email';
+            } else {
+                $rule_email = 'required|valid_email|is_unique[users.email]';
+            }
             $rules = [
-                'jenis' => 'required',
-                'nama' => 'required',
-                'deskripsi' => 'required',
-                'harga' => 'required',
+                'nama' => 'required|alpha',
+                'email' => $rule_email,
+                'phone' => 'required|regex_match[/^[0-9]{10|11|12|13}$/]',
             ];
             $errors = [
-
+                'nama' => [
+                    'required' => 'Nama wajib diisi',
+                    'alpha' => 'Format nama tidak valid'
+                ],
+                'email' => [
+                    'required' => 'Email wajib diisi',
+                    'valid_email' => 'Format email tidak valid',
+                    'is_unique' => 'Email sudah terpakai'
+                ],
+                'phone' => [
+                    'required' => 'Nomor telepon wajib diisi',
+                    'regex_match' => 'Format nomor telepon tidak valid'
+                ],
             ];
             if (!$this->validate($rules, $errors)) {
                 $data['validation'] = $this->validator;
             } else {
                 $newDataUser = [
-                    'jenis' => $this->request->getPost('jenis'),
                     'nama' => $this->request->getPost('nama'),
-                    'deskripsi' => $this->request->getPost('deskripsi'),
-                    'harga' => $this->request->getPost('harga'),
+                    'email' => $this->request->getPost('email'),
+                    'phone' => $this->request->getPost('phone'),
                 ];
-                $this->userModel->saveUser($newDataUser);
-                $session = session();
-                $session->setFlashData('success', 'Data berhasil ditambah');
+                $this->userModel->updateUser($newDataUser, $id);
+                $this->session->setFlashData('success', 'Your profile has been updated successfully');
                 return redirect()->to('user');
             }
         }
-        return view('admin/AddUser', $data);
-    }
-
-    public function edit($id)
-    {
-        $data['user'] = $this->userModel->getUser($id)->getRow();
-        return view('admin/EditUser', $data);
-    }
-
-    public function update()
-    {
-        $kode_menu = $this->request->getPost('kode_menu');
-        if ($this->request->getMethod() == 'post'){
-            $rules = [
-                'gambar' => 'ext_in[gambar,png,jpg,jpeg]'
-            ];
-            $errors = [
-                'gambar' => [
-                    'ext_in' => 'File gambar salah'
-                ]
-            ];
-            if (!$this->validate($rules, $errors)) {
-                $data['validation'] = $this->validator;
-            } else {
-                $newDataMenu = [
-                    'jenis' => $this->request->getPost('jenis'),
-                    'nama' => $this->request->getPost('nama'),
-                    'deskripsi' => $this->request->getPost('deskripsi'),
-                    'harga' => $this->request->getPost('harga'),
-                    'gambar' => $this->tambahGambar(),
-                ];
-                $this->userModel->updateMenu($newDataMenu, $kode_menu);
-                $session = session();
-                $session->setFlashData('success', 'Data berhasil diubah');
-                return redirect()->to('menu');
-            }
-        }
-        return redirect()->to("menu/edit/$kode_menu");
-    }
-
-    public function delete($id)
-    {
-        $this->userModel->deleteUser($id);
-        $session = session();
-        $session->setFlashData('success', 'Data berhasil dihapus');
-        return redirect()->to('user');
+        return view('user/edit', $data);
     }
 }

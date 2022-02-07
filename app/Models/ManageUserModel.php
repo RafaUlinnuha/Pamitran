@@ -29,10 +29,8 @@ class ManageUserModel extends Model
         $query = $this->db->table($this->table)->update($data, array('id' => $id));
         return $query;
     }
-
-    public function deleteUser($id)
-    {
-        $query = $this->db->table($this->table)->delete(array('id' => $id));
-        return $query;
+ 
+    public function search($keyword){
+        return $this->table('users')->like('nama', $keyword)->orLike('email', $keyword);
     }
 }

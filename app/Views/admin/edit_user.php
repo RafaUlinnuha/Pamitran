@@ -1,61 +1,62 @@
 <?php
-	$session = session();
-	$errors = $session->getFlashdata('errors');
-	$success = $session->getFlashdata('success');
+	$this->session = session();
+    
+    if(!$this->session->level==1){
+        echo "<script>history.go(-1);</script>";
+        die(); 
+    }
 ?>
 
-<?= $this->extend('/base'); ?>
+<?= $this->extend('/layout/base'); ?>
+
+<?= $this->section('custom_css') ?>
+    <link rel="stylesheet" href="<?= base_url('assets/css/edit_user.css') ?>">
+<?= $this->endSection('custom_css') ?>
 
 <?= $this->section('content'); ?>
-    <?php if($session->level==1) { ?>
-        <header class="title">
-            <h1>Edit Pengguna</h1>
-        </header>
-        <div class="input-form">
-            <?php if (isset($validation)) : ?>
-                <div>
-                    <div class="alert-danger">
-                        <span class="error"><?= $validation->listErrors() ?></span>
+
+    <div class="form-bg">
+        <div class="container-xl px-4 mt-4">
+            <div class="row">
+                <div class="col-xl-8 mx-auto mt-4">
+                    <div class="card xl-4">
+                        <div class="text-center pt-4">
+                            <h1 class="mb-4">Edit Account</h1>
+                        </div>
+                        <div class="card-body">
+                            <form action="<?= base_url('admin/update'); ?>" method="POST" class="form-container user" autocomplete="off">
+                                <?= csrf_field(); ?>
+                                <input type="hidden" name="id" value="<?= $user->id; ?>">
+                                <fieldset disabled="disabled">
+                                    <div class="form-group mb-4">
+                                        <label class="mb-2" for="id">Account ID</label>
+                                        <input class="form-control" id="id" name="id" type="text" value="<?= $user->id; ?>">
+                                    </div>
+                                </fieldset>
+                                <div class="form-group mb-4">
+                                    <label class="mb-2" for="nama">Full name</label>
+                                    <input class="form-control" id="nama" name="nama" type="text" value="<?= $user->nama; ?>">
+                                    <span class="text-danger"><?= isset($validation) ? display_error($validation, 'nama') : '' ?></span>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label class="mb-2" for="email">Email address</label>
+                                    <input class="form-control" id="email" name="email" type="text" value="<?= $user->email; ?>">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label class="mb-2" for="Phone">Phone number</label>
+                                    <input class="form-control" id="phone" name="phone" type="text" value="<?= $user->phone; ?>">
+                                </div>
+                                <div class="form-group mt-4">
+                                    <button type="submit" class="btn btn-primary btn-user btn-block">
+                                        Update
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            <?php endif; ?>
-            <?php echo form_open_multipart('admin/update_user'); ?>
-                <input type="hidden" name="id" value="<?= $users->id; ?>">
-                <div>
-                    <label for="nama">Nama</label><br>
-                    <input type="text" name="nama" id="nama" required autocomplete="off" value="<?= $menu->nama; ?>">
-                </div>
-                <div>
-                    <label>Jenis</label>
-                    <?php 
-                        $jenis = [
-                            'Makanan' => 'Makanan', 
-                            'Minuman' => 'Minuman'
-                        ];
-                        echo form_dropdown('jenis', $jenis, $menu->jenis); 
-                    ?>
-                </div>
-                <div>
-                    <label for="deskripsi">Deskripsi</label><br>
-                    <textarea name="deskripsi" id="deskripsi" cols="30" rows="5"><?= $menu->deskripsi; ?></textarea><br>
-                </div>
-                <div>
-                    <label for="harga">Harga</label><br>
-                    <input type="text" name="harga" id="harga" required autocomplete="off" value="<?= $menu->harga; ?>">
-                </div>
-                <div>
-                    <label for="gambar">Gambar</label><br>
-                    <input type="file" name="gambar">
-                </div>
-                <div>
-                    <button type="submit" class="button">UPDATE</button>
-                </div>
-            <?php echo form_close(); ?>
+            </div>
         </div>
-        <?php 
-            } else { 
-                echo "<script>alert('Maaf Pengguna Harus Admin');history.go(-1);</script>";
-                die(); 
-            }
-        ?>
+    </div>
+
 <?= $this->endSection('content'); ?>

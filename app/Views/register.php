@@ -1,37 +1,20 @@
-<?= $this->extend('/base'); ?>>
+<?= $this->extend('/layout/base'); ?>>
 
 <?= $this->section('content'); ?>
 
 <body class="bg-gradient-primary">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
                 <div class="card o-hidden border-0 shadow-lg my-5">
                     <div class="card-body p-0">
                         <div class="row">
-                            <div class="col-lg">
-                                <div class="p-5">
-                                    <div class="text-center">
-                                        <h1 class="mb-5">Register</h1>
-                                    </div>
-                                    <div class="form-group p-2">
-                                        <?php if(session()->get('success')) : ?>
-                                            <div class="col-12">
-                                                <div class="alert alert-success" role="alert">
-                                                    <?= session()->get('success') ?>
-                                                </div>
-                                            </div>
-                                        <?php endif; ?>
-
-                                        <?php if (session()->get('errors')) : ?>
-                                            <div class="col-12">
-                                                <div class="alert alert-danger" role="alert">
-                                                    <?= session()->get('errors') ?>
-                                                </div>
-                                            </div>
-                                        <?php endif; ?>
-                                    </div>
-                                    <form action="<?= base_url('/register'); ?>" method="POST" class="user">
+                            <div class="p-5">
+                                <div class="text-center">
+                                    <h1 class="mb-5">Register</h1>
+                                </div>
+                                <div class="form-group p-2">
+                                    <form action="<?= base_url('/register'); ?>" method="POST" class="user" autocomplete="off">
                                         <?= csrf_field(); ?>
                                         <div class="form-group p-2">
                                             <input type="text" class="form-control form-control-user" id="nama" name="nama" placeholder="Nama Lengkap" value="<?=set_value('nama')?>">
@@ -46,11 +29,11 @@
                                             <span class="text-danger"><?= isset($validation) ? display_error($validation, 'phone') : '' ?></span>
                                         </div>
                                         <div class="form-group p-2">
-                                            <input type="password" class="form-control form-control-user" autocomplete="off" placeholder="Password" id="password" name="password">
+                                            <input type="password" class="form-control form-control-user" placeholder="Password" id="password" name="password">
                                             <span class="text-danger"><?= isset($validation) ? display_error($validation, 'password') : '' ?></span>
                                         </div>
                                         <div class="form-group p-2">
-                                            <input type="password" class="form-control form-control-user" placeholder="Konfirmasi Password" autocomplete="off" id="password_confirm" name="password_confirm">
+                                            <input type="password" class="form-control form-control-user" placeholder="Konfirmasi Password" id="password_confirm" name="password_confirm">
                                             <span class="text-danger"><?= isset($validation) ? display_error($validation, 'password_confirm') : '' ?></span>
                                         </div>
                                         <br>
@@ -60,10 +43,10 @@
                                             </button>
                                         </div>
                                     </form>
-                                    <br>
-                                    <div class="small text-center pt-3">
-                                        Sudah punya akun? Silakan <a href="/login">login</a>.
-                                    </div>
+                                </div>
+                                <br>
+                                <div class="small text-center pt-3">
+                                    Sudah punya akun? Silakan <a href="/login">login</a>.
                                 </div>
                             </div>
                         </div>

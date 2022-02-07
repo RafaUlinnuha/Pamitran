@@ -6,41 +6,65 @@ class Layanan extends BaseController
 {
     public function satu()
     {
-        return view('layanan/satu');
+        $data = [
+            'title' => 'Satu'
+        ];
+        return view('layanan/satu', $data);
     }
 
     public function dua()
     {
-        return view('layanan/dua');
+        $data = [
+            'title' => 'Dua'
+        ];
+        return view('layanan/dua', $data);
     }
 
     public function tiga()
     {
-        return view('layanan/tiga');
+        $data = [
+            'title' => 'Tiga'
+        ];
+        return view('layanan/tiga', $data);
     }
 
     public function empat()
     {
-        return view('layanan/empat');
+        $data = [
+            'title' => 'Empat'
+        ];
+        return view('layanan/empat', $data);
     }
 
     public function lima()
     {
-        return view('layanan/lima');
+        $data = [
+            'title' => 'Lima'
+        ];
+        return view('layanan/lima', $data);
     }
 
     public function enam()
     {
-        return view('layanan/enam');
+        $data = [
+            'title' => 'Enam'
+        ];
+        return view('layanan/enam', $data);
     }
 
     public function tujuh()
     {
-        return view('layanan/tujuh');
+        $data = [
+            'title' => 'Tujuh'
+        ];
+        return view('layanan/tujuh', $data);
     }
 
     public function delapan()
     {
-        return view('layanan/delapan');
+        $data = [
+            'title' => 'Delapan'
+        ];
+        return view('layanan/delapan', $data);
     }
 }

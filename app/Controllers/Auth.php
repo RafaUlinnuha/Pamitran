@@ -8,13 +8,15 @@ class Auth extends BaseController
 {
     public function __construct()
     {
+        $this->model = new UserModel();
         helper(['url', 'form']);
     }
 
     public function login()
-    {
-        $data = [];
-        helper(['form']);
+    {   
+        $data = [
+            'title' => 'Login'
+        ];
         if ($this->request->getMethod() == 'post'){
             $rules = [
                 'email' => 'required|valid_email|is_not_unique[users.email]',
@@ -28,17 +30,19 @@ class Auth extends BaseController
                 ],
                 'password' => [
                     'required' => 'Password wajib diisi',
-                    'validateUser' => 'Email atau Password salah'
+                    'validateUser' => 'Password salah'
                 ]
             ];
             if (!$this->validate($rules, $errors)) {
                 $data['validation'] = $this->validator;
             } else {
-                $model = new UserModel();
-                $user = $model->where('email', $this->request->getVar('email'))->first();
+                $user = $this->model->where('email', $this->request->getVar('email'))->first();
                 $this->setUserSession($user);
 
-                return redirect()->to('home');
+                if($user['level'] == 1){
+                    return redirect()->to('admin');
+                }
+                return redirect()->to('/');
             }
         }
         return view('login', $data);
@@ -60,15 +64,16 @@ class Auth extends BaseController
 
     public function register()
     {
-        $data = [];
-        helper(['form']);
+        $data = [
+            'title' => 'Register'
+        ];
         if ($this->request->getMethod() == 'post'){
             $rules = [
                 'nama' => 'required',
                 'email' => 'required|valid_email|is_unique[users.email]',
                 'password' => 'required|min_length[5]|max_length[50]',
-                'phone' => 'required',
-                'password_confirm' => 'required|min_length[5]|max_length[50]|matches[password]',
+                'phone' => 'required|regex_match[/^[0-9]{10|11|12|13}$/]',
+                'password_confirm' => 'required|matches[password]',
             ];
             $errors = [
                 'nama' => [
@@ -80,7 +85,8 @@ class Auth extends BaseController
                     'is_unique' => 'Email sudah terpakai'
                 ],
                 'phone' => [
-                    'required' => 'Nomor telepon wajib diisi'
+                    'required' => 'Nomor telepon wajib diisi',
+                    'regex_match' => 'Nomor telepon tidak valid'
                 ],
                 'password' => [
                     'required' => 'Password wajib diisi',
@@ -89,15 +95,12 @@ class Auth extends BaseController
                 ],
                 'password_confirm' => [
                     'required' => 'Konfirmasi password wajib diisi',
-                    'min_length' => 'Konfirmasi password minimal 5 karakter',
-                    'max_length' => 'Konfirmasi password maximal 50 karakter',
                     'matches' => 'Konfirmasi password tidak cocok dengan password'
                 ]
             ];
             if (!$this->validate($rules, $errors)) {
                 $data['validation'] = $this->validator;
             } else {
-                $modelUser = new UserModel();
                 $newDataUser = [
                     'nama' => $this->request->getVar('nama'),
                     'email' => $this->request->getVar('email'),
@@ -105,9 +108,9 @@ class Auth extends BaseController
                     'password' => $this->request->getVar('password'),
                     'level' => 2,
                 ];
-                $modelUser->save($newDataUser);
+                $this->model->save($newDataUser);
                 $session = session();
-                $session->setFlashData('success', 'Registrasi Berhasil');
+                $session->setFlashData('success', 'Registration successful');
                 return redirect()->to('/login');
             }
         }

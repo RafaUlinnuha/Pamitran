@@ -31,10 +31,18 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+
 $routes->get('/', 'Home::index');
 $routes->get('logout', 'Auth::logout');
-$routes->match(['get', 'post'], 'register', 'Auth::register');
-$routes->match(['get', 'post'], 'login', 'Auth::login');
+$routes->get('visi_misi', 'Tentang::visi_misi');
+$routes->get('tim_pamitran', 'Tentang::tim_pamitran');
+$routes->get('/admin/edit/(:num)', 'Admin::edit/$1');
+$routes->delete('/admin/(:num)', 'Admin::delete/$1');
+$routes->get('/admin/(:any)', 'Admin::detail/$1');
+$routes->match(['get', 'post'], 'edit', 'User::edit');
+$routes->match(['get', 'post'], 'change_password', 'ChangePassword::edit');
+$routes->match(['get', 'post'], 'register', 'Auth::register', ['filter' => 'AlreadyLoggedIn']);
+$routes->match(['get', 'post'], 'login', 'Auth::login', ['filter' => 'AlreadyLoggedIn']);
 
 /*
  * --------------------------------------------------------------------
