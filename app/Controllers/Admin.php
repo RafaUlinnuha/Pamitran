@@ -2,10 +2,9 @@
 
 namespace App\Controllers;
 
-use CodeIgniter\Controller;
 use App\Models\ManageUserModel;
 
-class Admin extends Controller
+class Admin extends BaseController
 {
 
     protected $userModel;
@@ -17,8 +16,17 @@ class Admin extends Controller
         $this->userModel = new ManageUserModel();
     }
 
+    public function check_admin(){
+        $level_1 = $this->request->getVar('level');
+        if($level_1 != 1){
+            echo "<script>history.go(-1);</script>";
+            die(); 
+        }
+    }
+
     public function index()
     {
+        $this->check_admin();
         $currentPage = $this->request->getVar('page_users') ? $this->request->getVar('page_users') : 1;
         $keyword = $this->request->getVar('keyword');
         if($keyword){
@@ -38,6 +46,7 @@ class Admin extends Controller
 
     public function detail($id)
     {
+        $this->check_admin();
         $data = [
             'title' => 'User Detail',
             'user' => $this->userModel->getUser($id)->getRow()
@@ -47,6 +56,7 @@ class Admin extends Controller
 
     public function edit($id)
     {
+        $this->check_admin();
         $data = [
             'title' => 'Edit Account',
             'user' => $this->userModel->getUser($id)->getRow()
@@ -56,6 +66,7 @@ class Admin extends Controller
 
     public function update()
     {
+        $this->check_admin();
         $id = $this->request->getPost('id');
         if ($this->request->getMethod() == 'post'){
             $rules = [
@@ -81,6 +92,7 @@ class Admin extends Controller
 
     public function delete($id)
     {
+        $this->check_admin();
         $this->userModel->delete($id);
         $this->session->setFlashData('success', 'Data has been deleted successfully');
         return redirect()->to('admin');

@@ -5,8 +5,7 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light text-center">
     <div class="container">
         <a class="navbar-brand" href="/">
-            <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-            Pamitran
+            P A M I T R A N
         </a>
         <button 
             class="navbar-toggler" 
@@ -51,19 +50,24 @@
                             <li><a class="dropdown-item" href="/layanan/lima">Lima</a></li>
                             <li><a class="dropdown-item" href="/layanan/enam">Enam</a></li>
                             <li><a class="dropdown-item" href="/layanan/tujuh">Tujuh</a></li>
-                            <li><a class="dropdown-item" href="/layanan/delapan">Delapan</a></li>
+                            <li><a class="dropdown-item" href="/delapan">Delapan</a></li>
                         </ul>
                     </li>
                     <?php if(!$session->isLoggedIn): ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="/login">Login</a>
+                            <a class="nav-link" aria-current="page" href="/login">Login</a> 
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/register">Register</a>
+                            <a class="nav-link" aria-current="page" href="/register">Register</a> 
                         </li>
                     <?php else: ?>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/user">My Account</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">My Account</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/user">Account Details</a></li>
+                                <li><a class="dropdown-item" href="/edit">Edit Account</a></li>
+                                <li><a class="dropdown-item" href="/change_password">Change Password</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/logout">Logout</a>

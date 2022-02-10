@@ -1,11 +1,15 @@
 <?= $this->extend('/layout/base'); ?>>
 
+<?= $this->section('custom_css') ?>
+    <link rel="stylesheet" href="<?= base_url('assets/css/login.css') ?>">
+<?= $this->endSection('custom_css') ?>
+
 <?= $this->section('content'); ?>
 
 <body class="bg-gradient-primary">
-    <div class="container">
+    <div class="container my-4">
         <div class="row">
-            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="col-xl-5 col-lg-7 col-md-9 mx-auto my-4">
                 <div class="card o-hidden border-0 shadow-lg my-5">
                     <div class="card-body p-0">
                         <div class="row">
@@ -29,16 +33,16 @@
                                             <span class="text-danger"><?= isset($validation) ? display_error($validation, 'phone') : '' ?></span>
                                         </div>
                                         <div class="form-group p-2">
-                                            <input type="password" class="form-control form-control-user" placeholder="Password" id="password" name="password">
+                                            <input type="password" class="form-control form-control-user" placeholder="Kata Sandi" id="password" name="password">
                                             <span class="text-danger"><?= isset($validation) ? display_error($validation, 'password') : '' ?></span>
                                         </div>
                                         <div class="form-group p-2">
-                                            <input type="password" class="form-control form-control-user" placeholder="Konfirmasi Password" id="password_confirm" name="password_confirm">
+                                            <input type="password" class="form-control form-control-user" placeholder="Konfirmasi Kata Sandi" id="password_confirm" name="password_confirm">
                                             <span class="text-danger"><?= isset($validation) ? display_error($validation, 'password_confirm') : '' ?></span>
                                         </div>
                                         <br>
                                         <div class="text-center mt-4">
-                                            <button type="submit" class="btn btn-primary btn-user btn-block">
+                                            <button type="submit"  class="btn btn-primary btn-user btn-block">
                                                 Register
                                             </button>
                                         </div>

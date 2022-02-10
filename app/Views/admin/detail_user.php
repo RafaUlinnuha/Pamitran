@@ -1,10 +1,8 @@
 <?php
-	$this->session = session();
 
-    if(!$this->session->level==1){
-        echo "<script>history.go(-1);</script>";
-        die(); 
-    }
+use CodeIgniter\I18n\Time;
+
+$this->session = session();
 ?>
 
 <?= $this->extend('/layout/base'); ?>
@@ -38,6 +36,10 @@
                             <div class="mb-3">
                                 <label class="small mb-1" for="Phone">Phone number</label>
                                 <input class="form-control" id="phone" name="phone" type="text" value="<?= $user->phone; ?>">
+                            </div>
+                            <div class="mb-3">
+                                <label class="small mb-1" for="Phone">Member since</label>
+                                <input class="form-control" id="phone" name="phone" type="text" value="<?= Time::parse($user->created_at)->toDateString(); ?>">
                             </div>
                         </fieldset>
                             <button class="btn btn-warning m-1 text-white" onclick="location.href='/admin'" type="button"> Back to Manage User</button>

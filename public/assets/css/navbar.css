@@ -4,3 +4,7 @@
 .nav-link{
     font-size: 1.1em !important;
 }
+.navbar-brand{
+    font-size: 22px;
+    font-weight: bold;
+}

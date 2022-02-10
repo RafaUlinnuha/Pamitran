@@ -36,6 +36,8 @@ $routes->get('/', 'Home::index');
 $routes->get('logout', 'Auth::logout');
 $routes->get('visi_misi', 'Tentang::visi_misi');
 $routes->get('tim_pamitran', 'Tentang::tim_pamitran');
+$routes->get('delapan', 'Layanan::delapan');
+$routes->get('registrasi_layanan', 'Layanan::registrasi_layanan');
 $routes->get('/admin/edit/(:num)', 'Admin::edit/$1');
 $routes->delete('/admin/(:num)', 'Admin::delete/$1');
 $routes->get('/admin/(:any)', 'Admin::detail/$1');

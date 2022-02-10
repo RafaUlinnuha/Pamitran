@@ -2,12 +2,10 @@
 
 namespace App\Controllers;
 
-use CodeIgniter\Controller;
 use App\Models\ManageUserModel;
 
-class User extends Controller
+class User extends BaseController
 {
-
     protected $userModel;
 
     public function __construct()
@@ -20,7 +18,7 @@ class User extends Controller
     public function index()
     {
         $data = [
-            'title' => 'My Account',
+            'title' => 'Account Details',
             'user' => $this->userModel->where('id', $this->session->id)->first()
         ];
         return view('user/profile', $data);
@@ -42,9 +40,9 @@ class User extends Controller
                 $rule_email = 'required|valid_email|is_unique[users.email]';
             }
             $rules = [
-                'nama' => 'required|alpha',
+                'nama' => 'required',
                 'email' => $rule_email,
-                'phone' => 'required|regex_match[/^[0-9]{10|11|12|13}$/]',
+                'phone' => 'required|regex_match[/^[0-9]{10,13}$/]',
             ];
             $errors = [
                 'nama' => [
@@ -70,6 +68,7 @@ class User extends Controller
                     'phone' => $this->request->getPost('phone'),
                 ];
                 $this->userModel->updateUser($newDataUser, $id);
+                $this->session->set($newDataUser);
                 $this->session->setFlashData('success', 'Your profile has been updated successfully');
                 return redirect()->to('user');
             }

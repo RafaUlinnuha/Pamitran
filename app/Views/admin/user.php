@@ -1,11 +1,6 @@
 <?php
 	$this->session = session();
     $success = $this->session->getFlashdata('success');
-    
-    if(!$this->session->level==1){
-        echo "<script>history.go(-1);</script>";
-        die(); 
-    }
 ?>
 
 <?= $this->extend('/layout/base'); ?>
@@ -18,17 +13,15 @@
 
     <div class="container mt-3">
         <header class="title mt-2">
-            <h1>Manage User</h1>
+            <h1>Kelola User</h1>
         </header>
 
         <?php if ($this->session->get('success')) : ?>
-            <div id="swal" data-swal="<?= $this->session->get('success'); ?>"></div>
+            <div id="success" data-swal="<?= $this->session->get('success'); ?>"></div>
         <?php endif; ?>
 
         <div class="row">
-            <div class="col-md-8 p-2">
-                <button class="btn btn-primary" onclick="location.href='/admin/add_admin';" type="button"> Add Admin</button>
-            </div>
+            <div class="col-md-8 p-2"></div>
             <div class="col-md-4 p-2">
                 <form action="" autocomplete="off" method="POST">
                     <div class="input-group mb-3">
@@ -52,13 +45,15 @@
                     <tbody>
                         <?php $i = 1 + (5 * ($currentPage - 1)); ?>
                         <?php foreach ($user as $result) : ?>
+                            <?php if($result['level'] == 2) : ?>
                             <tr>
                                 <td><?= $i; ?></td>
                                 <td style="text-align: left;"><?= $result['nama']; ?></td>
                                 <td style="text-align: left;"><?= $result['email']; ?></td>
                                 <td><button class="btn btn-success" onclick="location.href='/admin/<?= $result['id']; ?>';" type="button"> Detail</button></td>
                             </tr>
-                        <?php $i++; ?>
+                            <?php $i++; ?>
+                            <?php endif; ?>
                         <?php endforeach; ?>
                     </tbody>
                 </table>

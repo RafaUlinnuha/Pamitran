@@ -1,10 +1,5 @@
 <?php
 	$this->session = session();
-    
-    if(!$this->session->level==1){
-        echo "<script>history.go(-1);</script>";
-        die(); 
-    }
 ?>
 
 <?= $this->extend('/layout/base'); ?>

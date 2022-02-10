@@ -55,6 +55,8 @@ class Auth extends BaseController
             'email' => $user['email'],
             'nama' => $user['nama'],
             'phone' => $user['phone'],
+            'password' => $user['password'],
+            'created_at' => $user['created_at'],
             'level' => $user['level'],
             'isLoggedIn' => true,
         ];
@@ -72,7 +74,7 @@ class Auth extends BaseController
                 'nama' => 'required',
                 'email' => 'required|valid_email|is_unique[users.email]',
                 'password' => 'required|min_length[5]|max_length[50]',
-                'phone' => 'required|regex_match[/^[0-9]{10|11|12|13}$/]',
+                'phone' => 'required|regex_match[/^[0-9]{10,13}$/]',
                 'password_confirm' => 'required|matches[password]',
             ];
             $errors = [
@@ -103,7 +105,7 @@ class Auth extends BaseController
             } else {
                 $newDataUser = [
                     'nama' => $this->request->getVar('nama'),
-                    'email' => $this->request->getVar('email'),
+                    'email' => $this->request->getPost('email'),
                     'phone' => $this->request->getVar('phone'),
                     'password' => $this->request->getVar('password'),
                     'level' => 2,
@@ -111,6 +113,7 @@ class Auth extends BaseController
                 $this->model->save($newDataUser);
                 $session = session();
                 $session->setFlashData('success', 'Registration successful');
+                
                 return redirect()->to('/login');
             }
         }
