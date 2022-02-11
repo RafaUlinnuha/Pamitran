@@ -6,14 +6,14 @@
 
 <?= $this->section('content'); ?>
     <header>
-        <h1>Visi Misi</h1>
+        <h1 class="h1-pages">Visi Misi</h1>
     </header>
 
     <section class="tentang-kami">
         <div class="container-lg">
             <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
                 <div class="col mx-auto">
-                    <img src="<?= base_url('assets/img/visimisi.jpeg') ?>" class="gallery-item" alt="gallery">
+                    <img class="img-pages" src="<?= base_url('assets/img/visimisi.jpeg') ?>" class="gallery-item" alt="gallery">
                 </div>
             </div>
         </div>
@@ -26,7 +26,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="<?= base_url('assets/img/visimisi.jpeg') ?>" class="modal-img" alt="modal img">
+                    <img class="img-pages" src="<?= base_url('assets/img/visimisi.jpeg') ?>" class="modal-img" alt="modal img">
                 </div>
             </div>
         </div>

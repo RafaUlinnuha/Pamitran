@@ -1,4 +1,4 @@
-h1{
+.h1-pages{
     text-align: center;
     font-size: 36px;
     font-weight: 800;
@@ -9,7 +9,7 @@ section{
     min-height: 50vh;
 }
 
-img{
+.img-pages{
     max-width: 100%;
 }
 
