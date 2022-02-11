@@ -82,21 +82,6 @@ class Layanan extends BaseController
         return view('layanan/delapan', $data);
     }
 
-    public function registrasi_layanan()
-    {
-        if(!$this->session->isLoggedIn){
-            $this->session->setFlashData('errors', 'Silakan login terlebih dahulu');
-            return redirect()->to('/Pamitran_Publication_Services');
-        }
-
-        $data = [
-            'title' => 'Registrasi Layanan',
-            'user' => $this->manageUserModel->where('id', $this->session->id)->first()
-        ];
-
-        return view('layanan/registrasi_layanan', $data);
-    }
-
     public function tambah_bukti_transfer()
     {
         $bukti_transfer = $this->request->getFile('bukti_transfer');
@@ -113,14 +98,39 @@ class Layanan extends BaseController
         return $nama_paper;
     }
 
-    public function save()
+    public function registrasi_layanan()
     {    
+
+        if(!$this->session->isLoggedIn){
+            $this->session->setFlashData('errors', 'Silakan login terlebih dahulu');
+            return redirect()->to('/Pamitran_Publication_Services');
+        }
+
+        $data = [
+            'title' => 'Registrasi Layanan',
+            'user' => $this->manageUserModel->where('id', $this->session->id)->first()
+        ];
+
         if ($this->request->getMethod() == 'post'){
             $rules = [
                 'bukti_transfer' => 'uploaded[bukti_transfer]|mime_in[bukti_transfer,image/jpg,image/jpeg,image/png]',
                 'paper' => 'uploaded[paper]|mime_in[paper,application/pdf,application/doc,application/docx]',
+                'jenis_layanan' => 'required',
             ];
-            if (!$this->validate($rules)) {
+            $errors = [
+                'bukti_transfer' => [
+                    'uploaded' => 'File tidak valid',
+                    'mime_in' => 'File tidak valid',
+                ],
+                'paper' => [
+                    'uploaded' => 'File tidak valid',
+                    'mime_in' => 'File tidak valid',
+                ],
+                'jenis_layanan' => [
+                    'required' => 'Jenis layanan wajib diisi',
+                ],
+            ];
+            if (!$this->validate($rules, $errors)) {
                 $data['validation'] = $this->validator;
             } else {
                 $id = $this->request->getVar('id');
@@ -143,7 +153,7 @@ class Layanan extends BaseController
                 $this->manageUserModel->updateUser($newDataUser, $id);
                 $session = session();
                 $session->setFlashData('success', 'Registrasi layanan publikasi berhasil');
-                return redirect()->to('/registrasi_layanan');
+                return redirect()->to('/user');
             }
         }
         return view('/layanan/registrasi_layanan', $data);

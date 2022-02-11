@@ -30,7 +30,7 @@
                         <h3 class="mb-4">Layanan Publikasi</h3>
                     </div>
                     <div class="card-body">
-                        <form action="<?= base_url('/layanan/save'); ?>" method="POST" class="form-container user" autocomplete="off" enctype="multipart/form-data">
+                        <form action="<?= base_url('registrasi_layanan'); ?>" method="POST" class="form-container user" autocomplete="off" enctype="multipart/form-data">
                             <?= csrf_field(); ?>
                             <input type="hidden" name="id" value="<?= $this->session->id; ?>">
                             <fieldset disabled="disabled">
@@ -142,6 +142,7 @@
                                 <div class="col-sm-12 mt-2">
                                     Paket Lengkap Publikasi SCOPUS/WoS Q1-Q4 dan SINTA   : Kontak WA Pamitran (082116611339)
                                 </div>
+                                <span class="text-danger"><?= isset($validation) ? display_error($validation, 'jenis_layanan') : '' ?></span>
                             </div>
                             <div class="form-group mb-4">
                                 <label class="mb-2" for="email" style="font-weight: bold;">Transfer Fee</label>
@@ -150,9 +151,10 @@
                         
                             <div class="form-group mb-4">
                                 <label class="mb-2" for="bukti_transfer" style="font-weight: bold;">Upload Bukti Transfer</label>
-                                <div class="input-group mb-3">
+                                <div class="input-group">
                                     <input type="file" class="form-control" id="bukti_transfer" name="bukti_transfer">
                                 </div>
+                                <span class="text-danger"><?= isset($validation) ? display_error($validation, 'bukti_transfer') : '' ?></span>
                             </div>
 
                             <div class="form-group mb-4">
@@ -164,7 +166,7 @@
                                     ];
                                     echo form_dropdown('metode_konsultasi', $metode_konsultasi, 'online', 'class="form-select"'); 
                                 ?>                                    
-                                <span class="text-danger"><?= isset($validation) ? display_error($validation, 'role') : '' ?></span>
+                                <span class="text-danger"><?= isset($validation) ? display_error($validation, 'metode_konsultasi') : '' ?></span>
                             </div>
 
                             <div class="form-group row mb-4">
@@ -174,9 +176,10 @@
 
                             <div class="form-group mb-4">
                                 <label class="mb-2" for="paper" style="font-weight: bold;">Upload Paper</label>
-                                <div class="input-group mb-3">
+                                <div class="input-group">
                                     <input type="file" class="form-control" id="paper" name="paper">
                                 </div>
+                                <span class="text-danger"><?= isset($validation) ? display_error($validation, 'paper') : '' ?></span>
                             </div>
 
                             <div class="form-group d-grid gap-2">
