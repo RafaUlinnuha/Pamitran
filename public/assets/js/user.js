@@ -15,3 +15,8 @@ if(errors){
         icon: 'error'
     })
 }
+
+
+$(document).ready(function() {
+    $('#user').DataTable();
+} );

@@ -8,7 +8,10 @@
     <link rel ="icon" href = "<?= base_url('assets/img/logo.png') ?>" type = "image/logo">
     <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.css') ?>">
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <link href="https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap5.min.css" rel="stylesheet"  type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.4/js/dataTables.bootstrap5.min.js"></script>
     <link rel="stylesheet" href="<?= base_url('assets/css/navbar.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/base.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/footer.css') ?>">

@@ -3,56 +3,59 @@
 namespace App\Controllers;
 
 use App\Models\ManageUserModel;
+use App\Models\LayananPublikasiModel;
 
 class Layanan extends BaseController
 {
-    protected $userModel;
+    protected $manageUserModel;
+    protected $layananPublikasiModel;
 
     public function __construct()
     {
         helper(['form', 'url']);
         $this->session = session();
-        $this->userModel = new ManageUserModel();
+        $this->manageUserModel = new ManageUserModel();
+        $this->layananPublikasiModel = new LayananPublikasiModel();
     }
 
-    public function satu()
+    public function Endoskopi_Training_Center()
     {
         $data = [
-            'title' => 'Satu'
+            'title' => 'Endoskopi Training Center'
         ];
-        return view('layanan/satu', $data);
+        return view('layanan/Endoskopi_Training_Center', $data);
     }
 
-    public function dua()
+    public function Dental_Training_Center()
     {
         $data = [
-            'title' => 'Dua'
+            'title' => 'Dental Training Center'
         ];
-        return view('layanan/dua', $data);
+        return view('layanan/Dental_Training_Center', $data);
     }
 
-    public function tiga()
+    public function OSCE_Training_Center()
     {
         $data = [
-            'title' => 'Tiga'
+            'title' => 'OSCE Training Center'
         ];
-        return view('layanan/tiga', $data);
+        return view('layanan/OSCE_Training_Center', $data);
     }
 
-    public function empat()
+    public function Kerjasama_Penelitian()
     {
         $data = [
-            'title' => 'Empat'
+            'title' => 'Kerjasama Penelitian'
         ];
-        return view('layanan/empat', $data);
+        return view('layanan/Kerjasama_Penelitian', $data);
     }
 
-    public function lima()
+    public function Pamitran_Publication_Services()
     {
         $data = [
-            'title' => 'Lima'
+            'title' => 'Pamitran_Publication_Services'
         ];
-        return view('layanan/lima', $data);
+        return view('layanan/Pamitran_Publication_Services', $data);
     }
 
     public function enam()
@@ -81,46 +84,68 @@ class Layanan extends BaseController
 
     public function registrasi_layanan()
     {
+        if(!$this->session->isLoggedIn){
+            $this->session->setFlashData('errors', 'Silakan login terlebih dahulu');
+            return redirect()->to('/Pamitran_Publication_Services');
+        }
+
         $data = [
             'title' => 'Registrasi Layanan',
-            'user' => $this->userModel->where('id', $this->session->id)->first()
+            'user' => $this->manageUserModel->where('id', $this->session->id)->first()
         ];
 
         return view('layanan/registrasi_layanan', $data);
     }
 
-    public function tambahPaper()
+    public function tambah_bukti_transfer()
+    {
+        $bukti_transfer = $this->request->getFile('bukti_transfer');
+        $nama_bukti_transfer = $bukti_transfer->getRandomName();
+        $bukti_transfer->move('assets/img/bukti_transfer/', $nama_bukti_transfer);
+        return $nama_bukti_transfer;
+    }
+
+    public function tambah_paper()
     {
         $paper = $this->request->getFile('paper');
-        $namaPaper = $paper->getClientName();
-        $paper->move('assets/img/', $namaPaper);
-        return $namaPaper;
+        $nama_paper = $paper->getRandomName();
+        $paper->move('assets/uploads/', $nama_paper);
+        return $nama_paper;
     }
 
     public function save()
-    {
-        $data = [];
+    {    
         if ($this->request->getMethod() == 'post'){
             $rules = [
-                'paper' => 'uploaded[paper]|ext_in[paper,png,jpg,jpeg]'
+                'bukti_transfer' => 'uploaded[bukti_transfer]|mime_in[bukti_transfer,image/jpg,image/jpeg,image/png]',
+                'paper' => 'uploaded[paper]|mime_in[paper,application/pdf,application/doc,application/docx]',
             ];
-            $errors = [
-                'paper' => [
-                    'ext_in' => 'File paper salah'
-                ]
-            ];
-            if (!$this->validate($rules, $errors)) {
+            if (!$this->validate($rules)) {
                 $data['validation'] = $this->validator;
             } else {
-                $newDataMenu = [
-                    'paper' => $this->tambahPaper(),
+                $id = $this->request->getVar('id');
+                $old_jenis_layanan = $this->request->getVar('jenis_layanan');
+                $jenis_layanan = implode("<br><br>", $old_jenis_layanan);
+                $newDataLayanan = [
+                    'id_users' => $id,
+                    'id_layanan' => $this->request->getVar('id_layanan'),
+                    'jenis_layanan' => $jenis_layanan,
+                    'bukti_transfer' => $this->tambah_bukti_transfer(),
+                    'metode_konsultasi' => $this->request->getVar('metode_konsultasi'),
+                    'paper' => $this->tambah_paper(),
                 ];
-                $this->menuModel->saveMenu($newDataMenu);
+                
+                $newDataUser = [
+                    'is_registered' => 'Sedang Dalam Proses Verifikasi',
+                ];
+
+                $this->layananPublikasiModel->saveUser($newDataLayanan);
+                $this->manageUserModel->updateUser($newDataUser, $id);
                 $session = session();
-                $session->setFlashData('success', 'Data berhasil ditambah');
-                return redirect()->to('menu');
+                $session->setFlashData('success', 'Registrasi layanan publikasi berhasil');
+                return redirect()->to('/registrasi_layanan');
             }
         }
-        return view('admin/AddMenu', $data);
+        return view('/layanan/registrasi_layanan', $data);
     }
 }

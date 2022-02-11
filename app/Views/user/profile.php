@@ -2,7 +2,7 @@
 	$this->session = session();
     $success = $this->session->getFlashdata('success');
     
-    if(!$this->session->level==2){
+    if(!$this->session->role=='user'){
         echo "<script>history.go(-1);</script>";
         die(); 
     }
@@ -41,6 +41,10 @@
                                 <div class="mb-4">
                                     <label class="mb-2" for="Phone">Nomor Telepon</label>
                                     <input class="form-control" id="phone" name="phone" type="text" value="<?= $user['phone']; ?>">
+                                </div>
+                                <div class="mb-4">
+                                    <label class="mb-2" for="Phone">Registrasi Layanan Publikasi</label>
+                                    <input class="form-control" id="phone" name="phone" type="text" value="<?= $user['is_registered']; ?>">
                                 </div>
                             </fieldset>
                         </div>

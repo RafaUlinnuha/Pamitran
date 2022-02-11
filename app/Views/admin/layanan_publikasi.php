@@ -13,7 +13,7 @@
 
     <div class="container mt-5">
         <header class="title mt-2">
-            <h1>Kelola User</h1>
+            <h1>Layanan Publikasi</h1>
         </header>
 
         <?php if ($this->session->get('success')) : ?>
@@ -22,25 +22,31 @@
 
         <div class="row">
             <div class="table-responsive">
-                <table id="user" class="table table-striped table-bordered table-hover text-center mt-3">
+                <table id="user" class="table table-striped table-bordered table-hover col text-center mt-3">
                     <thead>
                         <tr>
                             <th>No</th>
                             <th>Nama</th>
-                            <th>Email</th>
-                            <th>Role</th>
+                            <th>Jenis Layanan</th>
+                            <th>Bukti Transfer</th>
+                            <th>Metode Konsultasi</th>
+                            <th>Paper</th>
+                            <th>Registrasi Layanan Publikasi</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php $i = 1; ?>
-                        <?php foreach ($user as $result) : ?>
+                        <?php foreach ($results as $result) : ?>
                             <tr>
                                 <td><?= $i; ?></td>
                                 <td style="text-align: left;"><?= $result['nama']; ?></td>
-                                <td style="text-align: left;"><?= $result['email']; ?></td>
-                                <td style="text-align: left;"><?= $result['role']; ?></td>
-                                <td><button class="btn btn-success" onclick="location.href='/admin/<?= $result['id']; ?>';" type="button"> Detail</button></td>
+                                <td style="text-align: left;"><?= $result['jenis_layanan']; ?></td>
+                                <td style="text-align: left;"><?= $result['bukti_transfer']; ?></td>
+                                <td style="text-align: left;"><?= $result['metode_konsultasi']; ?></td>
+                                <td style="text-align: left;"><?= $result['is_registered']; ?></td>
+                                <td style="text-align: left;"><?= $result['paper']; ?></td>
+                                <td><button class="btn btn-success" onclick="location.href='/detail_layanan/<?= $result['id_layanan']; ?>';" type="button">Detail</button></td>
                             </tr>
                             <?php $i++; ?>
                         <?php endforeach; ?>

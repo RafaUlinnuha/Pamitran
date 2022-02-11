@@ -18,39 +18,21 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="<?= base_url('assets/img/carousel/slide1.png') ?>" class="d-block w-100" alt="silder_1">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p>Gedung Pamitran</p>
-                    </div>
                 </div>
                 <div class="carousel-item">
                     <img src="<?= base_url('assets/img/carousel/slide2.png') ?>" class="d-block w-100" alt="silder_2">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p>Logo Pamitran</p>
-                    </div>
                 </div>
                 <div class="carousel-item">
                     <img src="<?= base_url('assets/img/carousel/slide3.png') ?>" class="d-block w-100" alt="silder_3">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p>Visi Misi Pamitran</p>
-                    </div>
                 </div>
                 <div class="carousel-item">
                     <img src="<?= base_url('assets/img/carousel/slide4.png') ?>" class="d-block w-100" alt="silder_4">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                    </div>
                 </div>
                 <div class="carousel-item">
                     <img src="<?= base_url('assets/img/carousel/slide5.png') ?>" class="d-block w-100" alt="silder_5">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                    </div>
                 </div>
                 <div class="carousel-item">
                     <img src="<?= base_url('assets/img/carousel/slide6.png') ?>" class="d-block w-100" alt="silder_6">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                    </div>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#slides" data-bs-slide="prev">
@@ -66,10 +48,15 @@
 
     <section class="about p-5">
         <div class="container p-5">
-            <h1>Pamitran</h1>
+            <h1 style="background-color: rgba(0, 168, 156, 1);" class="title">P A M I T R A N</h1>
             <div class="reveal">
                 <div class="row pt-3">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita aliquid dolorum similique! Debitis quas modi mollitia sequi? Vitae quae provident nulla itaque at neque commodi soluta! Explicabo eius excepturi ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos doloribus commodi voluptate, ab illum obcaecati necessitatibus sunt praesentium assumenda qui quo temporibus minus magnam deleniti quibusdam velit, tenetur possimus? Autem?</p>
+                    <p class="p-home">Pusat Akademi, Inovasi, Teknologi, dan Riset (PAMITRAN) - Medical Education, Development, and Innovation Center Universitas Padjadjaran (MEDIC-UP) adalah suatu wadah untuk mengintegrasikan fakultas rumpun kesehatan(Fakultas Kedokteran, Fakultas Kedokteran Gigi, Fakultas Farmasi, Fakultas Keperawatan, dan Fakultas Psikologi) dan juga fakultas lain yang terkait dengan bidang kesehatan serta fakultas ekonomi dan bisnis. 
+                    </p>
+                    <br><br>
+                    <p class="p-home">Masing-masing fakultas dapat mengembangkan ide bisnisnya dengan memanfaatkan ruangan yang ada serta rencana sinergitasnya dengan kalangan swasta atau publik. Dengan kolaborasi tersebut, pemanfaatan Gedung Eijkman diharapkan lebih optimal dan nilai tambah yang diperoleh dapat dimanfaatkan secara merata oleh fakultas-fakultas tersebut dalam memajukan kegiatan Tri Dharma Perguruan Tinggi.</p>
+                    <br><br>
+                    <p class="p-home">PAMITRAN-UP dibentuk pada tanggal 1 September 2021 di Bandung berdasarkan Keputusan Rektor Universitas Padjadjaran Nomor: 2069/UN6.RKT/ Kep/HK/2021 tentang Pembentukan dan Pengangkatan Pengelola Satuan Usaha Pusat Akademik, Inovasi, Teknologi, dan Riset Kesehatan Universitas Padjadjaran (PAMITRAN-UP).</p>
                 </div>
             </div>
         </div>
@@ -80,7 +67,7 @@
     
     <section class="services text-center">
         <div class="container p-5">
-            <h1>Layanan</h1>
+            <h1>L A Y A N A N</h1>
             <div class="reveal">
                 <div class="row pt-3">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti rem illum reiciendis, minima voluptatum exercitationem hic neque. Atque, itaque officiis nam necessitatibus accusamus eaque magni illo. Atque iusto sint reiciendis!</p>
@@ -88,37 +75,37 @@
                 <div class="row pt-3">
                     <div class="col-12 col-lg-3 mb-4">
                         <div class="card card-1 p-3 text-center">
-                            <h4 class="py-2">Satu</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/layanan/satu'">Read More</button>
+                            <h4 class="py-2">Endoskopi Training Center</h4>
+                            <button class="btn btn-outline-dark" onclick="document.location='/Endoskopi_Training_Center'">Read More</button>
                         </div>
                     </div>
 
                     <div class="col-12 col-lg-3 mb-4">
                         <div class="card card-1 p-3 text-center">
-                            <h4 class="py-2">Dua</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/layanan/dua'">Read More</button>
+                            <h4 class="py-2">Dental Training Center</h4>
+                            <button class="btn btn-outline-dark" onclick="document.location='/Dental_Training_Center'">Read More</button>
                         </div>
                     </div>
                     
                     <div class="col-12 col-lg-3 mb-4">
                         <div class="card card-1 p-3 text-center">
-                            <h4 class="py-2">Tiga</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/layanan/tiga'">Read More</button>
+                            <h4 class="py-2">OSCE Training Center</h4>
+                            <button class="btn btn-outline-dark" onclick="document.location='/OSCE_Training_Center'">Read More</button>
                         </div>
                     </div>
                     
                     <div class="col-12 col-lg-3 mb-4">
                         <div class="card card-1 p-3 text-center">
-                            <h4 class="py-2">Empat</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/layanan/empat'">Read More</button>
+                            <h4 class="py-2">Kerjasama Penelitian</h4>
+                            <button class="btn btn-outline-dark" onclick="document.location='/Kerjasama_Penelitian'">Read More</button>
                         </div>
                     </div>
                 </div>
                 <div class="row pt-3">
                     <div class="col-12 col-lg-3 mb-4">
                         <div class="card card-1 p-3 text-center">
-                            <h4 class="py-2">Lima</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/layanan/lima'">Read More</button>
+                            <h4 class="py-2">Pamitran Publication Services</h4>
+                            <button class="btn btn-outline-dark" onclick="document.location='/Pamitran_Publication_Services'">Read More</button>
                         </div>
                     </div>
 

@@ -1,7 +1,7 @@
 <?php
 	$this->session = session();
 
-    if(!$this->session->level==2){
+    if(!$this->session->role=='user'){
         echo "<script>history.go(-1);</script>";
         die(); 
     }

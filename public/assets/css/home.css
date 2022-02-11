@@ -12,9 +12,20 @@
     height: 100vh;
 }
 
+.p-home {
+    text-align: justify;
+    font-size: 18px;
+}
+
 h1{
     font-size: 36px;
     font-weight: 800;
+}
+
+.title{
+    text-align: center;
+    padding: 8px;
+    color: #fff;
 }
 
 section{

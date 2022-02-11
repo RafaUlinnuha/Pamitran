@@ -1,7 +1,7 @@
 <?php
 	$this->session = session();
 
-    if(!$this->session->level==2){
+    if(!$this->session->role=='user'){
         echo "<script>history.go(-1);</script>";
         die(); 
     }
@@ -21,7 +21,7 @@
             <div class="col-xl-8 mx-auto my-4">
                 <div class="card xl-4">
                     <div class="text-center py-4">
-                        <h3 class="mb-4">Ubah Akun</h3>
+                        <h3 class="mb-4">Ubah Profil</h3>
                     </div>
                     <div class="card-body">
                         <form action="<?= base_url('edit'); ?>" method="POST" class="form-container user" autocomplete="off">
@@ -46,7 +46,7 @@
                             <div class="form-group" style="float: right;">
                                 <a href="/user" class="cancel"> Cancel</a>
                                 <button type="submit" class="btn btn-primary btn-user btn-block m-1">
-                                    Ubah Akun
+                                    Ubah Profil
                                 </button>
                             </div>
                         </form>

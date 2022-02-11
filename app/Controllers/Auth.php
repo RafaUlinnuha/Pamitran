@@ -39,7 +39,7 @@ class Auth extends BaseController
                 $user = $this->model->where('email', $this->request->getVar('email'))->first();
                 $this->setUserSession($user);
 
-                if($user['level'] == 1){
+                if($user['role'] == 'admin'){
                     return redirect()->to('admin');
                 }
                 return redirect()->to('/');
@@ -57,7 +57,7 @@ class Auth extends BaseController
             'phone' => $user['phone'],
             'password' => $user['password'],
             'created_at' => $user['created_at'],
-            'level' => $user['level'],
+            'role' => $user['role'],
             'isLoggedIn' => true,
         ];
         session()->set($data);
@@ -108,7 +108,8 @@ class Auth extends BaseController
                     'email' => $this->request->getPost('email'),
                     'phone' => $this->request->getVar('phone'),
                     'password' => $this->request->getVar('password'),
-                    'level' => 2,
+                    'is_registered' => 'Belum Teregistrasi',
+                    'role' => 'user',
                 ];
                 $this->model->save($newDataUser);
                 $session = session();

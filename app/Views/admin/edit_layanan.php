@@ -24,62 +24,61 @@
                         </div>
                     <?php endif; ?>
                         <div class="text-center pt-4">
-                            <h1 class="mb-4">Edit Account</h1>
+                            <h1 class="mb-4">Detail Layanan Publikasi</h1>
                         </div>
                         <div class="card-body">
-                            <form action="<?= base_url('admin/update'); ?>" method="POST" class="form-container user" autocomplete="off">
+                            <fieldset disabled="disabled">
                                 <?= csrf_field(); ?>
-                                <input type="hidden" name="id" value="<?= $user->id; ?>">
+                                <input type="hidden" name="id" value="<?= $results->id; ?>">
                                 <fieldset disabled="disabled">
                                     <div class="form-group mb-4">
                                         <label class="mb-2" for="id">ID User</label>
-                                        <input class="form-control" id="id" name="id" type="text" value="<?= $user->id; ?>">
+                                        <input class="form-control" id="id" name="id" type="text" value="<?= $results->id; ?>">
                                     </div>
                                 </fieldset>
                                 <div class="form-group mb-4">
                                     <label class="mb-2" for="nama">Name</label>
-                                    <input class="form-control" id="nama" name="nama" type="text" value="<?= $user->nama; ?>">
+                                    <input class="form-control" id="nama" name="nama" type="text" value="<?= $results->nama; ?>">
                                     
                                 </div>
                                 <div class="form-group mb-4">
                                     <label class="mb-2" for="email">Email</label>
-                                    <input class="form-control" id="email" name="email" type="text" value="<?= $user->email; ?>">
+                                    <input class="form-control" id="email" name="email" type="text" value="<?= $results->email; ?>">
                                    
                                 </div>
                                 <div class="form-group mb-4">
                                     <label class="mb-2" for="phone">Nomor Telepon</label>
-                                    <input class="form-control" id="phone" name="phone" type="text" value="<?= $user->phone; ?>">
+                                    <input class="form-control" id="phone" name="phone" type="text" value="<?= $results->phone; ?>">
                                 </div>
                                 <div class="form-group mb-4">
-                                    <label class="mb-2" for="role">Role</label><br>
-                                    <?php 
-                                        $role = [
-                                            'admin' => 'Admin', 
-                                            'user' => 'User'
-                                        ];
-                                        echo form_dropdown('role', $role, $user->role, 'class="form-select"'); 
-                                    ?>                                    
-                                    <span class="text-danger"><?= isset($validation) ? display_error($validation, 'role') : '' ?></span>
+                                    <label class="mb-2" for="nama">Jenis Layanan</label>
+                                    <input class="form-control" id="nama" name="nama" type="text" value="<?= $results->jenis_layanan; ?>">
+                                </div>        
+                                <div class="form-group mb-4">
+                                    <label class="mb-2" for="email">Bukti Transfer</label>
+                                    <br><img src="assets/img/bukti_transfer/<?= $results->bukti_transfer; ?>">
                                 </div>
                                 <div class="form-group mb-4">
-                                    <label class="mb-2" for="role">Registrasi Layanan Publikasi</label><br>
+                                    <label class="mb-2" for="phone">Metode Konsultasi</label>
+                                    <input class="form-control" id="phone" name="phone" type="text" value="<?= $results->metode_konsultasi; ?>">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label class="mb-2" for="phone">Paper</label>
+                                    <br><img src="assets/img/bukti_transfer/<?= $results->bukti_transfer; ?>">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label class="mb-2" for="layanan_publikasi">Registrasi Layanan Publikasi</label><br>
                                     <?php 
                                         $is_registered = [
                                             'Belum Teregristrasi' => 'Belum Teregristrasi', 
                                             'Sedang Dalam Proses Verifikasi' => 'Sedang Dalam Proses Verifikasi', 
                                             'Sudah Teregristrasi' => 'Sudah Teregristrasi',
                                         ];
-                                        echo form_dropdown('is_registered', $is_registered, $user->is_registered, 'class="form-select"'); 
+                                        echo form_dropdown('is_registered', $is_registered, $results->is_registered, 'class="form-select"'); 
                                     ?>                                    
                                     <span class="text-danger"><?= isset($validation) ? display_error($validation, 'role') : '' ?></span>
                                 </div>
-                                <div class="form-group" style="float: right;">
-                                    <a href="/admin/<?= $user->id; ?>" class="cancel"> Cancel</a>
-                                    <button type="submit" class="btn btn-primary btn-user btn-block m-1">
-                                        Ubah User
-                                    </button>
-                                </div>
-                            </form>
+                            </fieldset>
                         </div>
                     </div>
                 </div>

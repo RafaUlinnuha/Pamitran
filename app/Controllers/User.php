@@ -47,7 +47,6 @@ class User extends BaseController
             $errors = [
                 'nama' => [
                     'required' => 'Nama wajib diisi',
-                    'alpha' => 'Format nama tidak valid'
                 ],
                 'email' => [
                     'required' => 'Email wajib diisi',
