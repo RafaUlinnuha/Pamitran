@@ -28,6 +28,7 @@ class Admin extends BaseController
 
     public function index()
     {
+        $this->check_admin();
         $user = $this->userModel->getUser();
         $data = [
             'title' => 'Admin',
