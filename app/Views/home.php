@@ -200,7 +200,6 @@
     
     <section class="video text-center p-5">
         <div class="container p-5">
-            <h1>Video Pamitran</h1>
             <div class="reveal">
                 <div class="row pt-3">
                     <div class="video-promo iframe-container">

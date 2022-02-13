@@ -28,9 +28,7 @@
                             <th>No</th>
                             <th>Nama</th>
                             <th>Jenis Layanan</th>
-                            <th>Bukti Transfer</th>
                             <th>Metode Konsultasi</th>
-                            <th>Paper</th>
                             <th>Registrasi Layanan Publikasi</th>
                             <th>Aksi</th>
                         </tr>
@@ -42,10 +40,8 @@
                                 <td><?= $i; ?></td>
                                 <td style="text-align: left;"><?= $result['nama']; ?></td>
                                 <td style="text-align: left;"><?= $result['jenis_layanan']; ?></td>
-                                <td style="text-align: left;"><?= $result['bukti_transfer']; ?></td>
                                 <td style="text-align: left;"><?= $result['metode_konsultasi']; ?></td>
                                 <td style="text-align: left;"><?= $result['is_registered']; ?></td>
-                                <td style="text-align: left;"><?= $result['paper']; ?></td>
                                 <td><button class="btn btn-success" onclick="location.href='/detail_layanan/<?= $result['id_layanan']; ?>';" type="button">Detail</button></td>
                             </tr>
                             <?php $i++; ?>

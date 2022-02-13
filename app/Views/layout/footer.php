@@ -4,16 +4,16 @@
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                 <h5 class="mb-4 font-weight-bold">Social Media</h5>
                 <p>
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <a href="https://www.instagram.com/pamitran.unpad"><i class="fa-brands fa-instagram"></i></a> pamitran.unpad
                 </p>
                 <p>
-                    <i class="fa fa-facebook" aria-hidden="true"></i> 
+                    <a href="https://www.facebook.com/pages/category/Educational-Research-Center/Pamitran-Unpad-109031338290523/"><i class="fa fa-facebook" aria-hidden="true"></i></a> Pamitran Unpad
                 </p>
                 <p>
-                    <i class="fa fa-youtube" aria-hidden="true"></i> 
+                    <a href="https://www.youtube.com/channel/UCTgZXc6CO-ARxynFcIEULsg"><i class="fa fa-youtube" aria-hidden="true"></i></a> Pamitran Unpad
                 </p>
                 <p>
-                    <i class="fa fa-tiktok" aria-hidden="true"></i> 
+                    <a href="https://www.tiktok.com/@pamitran_up"><i class="fab fa-tiktok" aria-hidden="true"></i></a> pamitran_up
                 </p>
             </div>
 

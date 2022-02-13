@@ -146,18 +146,6 @@ class Admin extends BaseController
         return view('admin/detail_layanan', $data);
     }
 
-    public function edit_layanan($id_layanan)
-    {
-        $this->check_admin();
-        $layanan_publikasi = $this->layananPublikasiModel->join('users', 'layanan_publikasi.id_users = users.id')->getUser($id_layanan)->getRow();
-        $data = [
-
-            'title' => 'Edit Registrasi Layanan',
-            'results' => $layanan_publikasi,
-        ];
-        return view('admin/edit_layanan', $data);
-    }
-
     public function download_bukti_transfer($id_layanan){
         $data_bukti_transfer = $this->layananPublikasiModel->getUser($id_layanan)->getRow();
         return $this->response->download('assets/img/bukti_transfer/' . $data_bukti_transfer->bukti_transfer, null);

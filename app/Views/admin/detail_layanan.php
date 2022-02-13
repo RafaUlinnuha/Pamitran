@@ -76,7 +76,6 @@
                                     <div class="form-control"><?= $results['is_registered']; ?></div>                               
                                 </div>
                             <button class="btn btn-warning m-1 text-white" onclick="location.href='/admin'" type="button"> Kembali ke Kelola User</button>
-                            <button class="btn btn-primary m-1" onclick="location.href='/admin/edit/<?= $results['id'];; ?>'" type="button"><i class="fa fa-pencil" aria-hidden="true"></i> Ubah User</button>
                             <a href="/admin/delete_layanan/<?= $results['id_layanan']; ?>">
                                 <button class="btn btn-danger m-1" onclick="return confirm('Are you sure?');" type="submit"><i class="fa fa-trash" aria-hidden="true"></i> Hapus</button>
                             </a>
