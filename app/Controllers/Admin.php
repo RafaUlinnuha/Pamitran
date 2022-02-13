@@ -75,7 +75,6 @@ class Admin extends BaseController
                 'email' => $rule_email,
                 'phone' => 'required|regex_match[/^[0-9]{10,13}$/]',
                 'role' => 'required',
-                'is_registered' => 'required',
             ];
             $errors = [
                 'nama' => [
@@ -93,9 +92,6 @@ class Admin extends BaseController
                 'role' => [
                     'required' => 'Role wajib diisi',
                 ],
-                'is_registered' => [
-                    'required' => 'is_registered wajib diisi',
-                ],
             ];
             if (!$this->validate($rules, $errors)) {
                 $data['validation'] = $this->validator;
@@ -105,10 +101,9 @@ class Admin extends BaseController
                     'email' => $this->request->getPost('email'),
                     'phone' => $this->request->getPost('phone'),
                     'role' => $this->request->getPost('role'),
-                    'is_registered' => $this->request->getPost('is_registered'),
                 ];
                 $this->userModel->updateUser($newDataUser, $id);
-                $this->session->setFlashData('success', 'Data has been updated successfully');
+                $this->session->setFlashData('success', 'Data telah berhasil diperbaharui');
                 return redirect()->to('admin');
             }
         }
@@ -145,6 +140,32 @@ class Admin extends BaseController
         ];
         return view('admin/detail_layanan', $data);
     }
+
+    public function edit_status($id)
+    {
+        $this->check_admin();
+        $user =  $this->userModel->getUser($id)->getRow();
+
+        $data = [
+            'title' => 'Edit Status Registrasi Layanan',
+            'user' => $user,
+        ];
+
+        $id = $this->request->getPost('id');
+
+        if ($this->request->getMethod() == 'post'){
+            $newDataUser = [
+                'is_registered' => $this->request->getPost('is_registered'),
+            ];
+
+            $this->userModel->updateUser($newDataUser, $id);
+
+            $this->session->setFlashData('success', 'Data telah berhasil diperbaharui');
+            return redirect()->to('layanan_publikasi');
+        }
+        return view('admin/edit_status', $data);
+    }
+    
 
     public function download_bukti_transfer($id_layanan){
         $data_bukti_transfer = $this->layananPublikasiModel->getUser($id_layanan)->getRow();

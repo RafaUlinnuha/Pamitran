@@ -54,7 +54,7 @@ $routes->get('Laboratorium', 'Layanan::Laboratorium');
 $routes->get('Conference_Rooms', 'Layanan::Conference_Rooms');
 $routes->get('layanan_publikasi', 'Admin::layanan_publikasi');
 $routes->get('/admin/edit/(:num)', 'Admin::edit/$1');
-$routes->get('/admin/edit_layanan/(:num)', 'Admin::edit_layanan/$1');
+$routes->get('/admin/edit_status/(:num)', 'Admin::edit_status/$1');
 $routes->get('/detail_layanan/(:num)', 'Admin::detail_layanan/$1');
 $routes->get('/admin/download_bukti_transfer/(:num)', 'Admin::download_bukti_transfer/$1');
 $routes->get('/admin/download_paper/(:num)', 'Admin::download_paper/$1');

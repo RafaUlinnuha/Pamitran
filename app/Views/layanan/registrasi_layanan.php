@@ -175,7 +175,7 @@
                             </div>
 
                             <div class="form-group mb-4">
-                                <label class="mb-2" for="paper" style="font-weight: bold;">Upload Paper</label>
+                                <label class="mb-2" for="paper" style="font-weight: bold;">Upload Paper</label><span>    (File dalam bentuk Pdf)</span>
                                 <div class="input-group">
                                     <input type="file" class="form-control" id="paper" name="paper">
                                 </div>
@@ -184,7 +184,7 @@
 
                             <div class="form-group d-grid gap-2">
                                 <button type="submit" class="btn btn-primary btn-user btn-block">
-                                    Registrasi Layanan
+                                    Submit
                                 </button>
                             </div>
                         </form>

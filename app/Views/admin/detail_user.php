@@ -42,10 +42,6 @@ $this->session = session();
                                 <input class="form-control" id="role" name="role" type="text" value="<?= $user->role; ?>">
                             </div>
                             <div class="mb-3">
-                                <label class="small mb-1" for="role">Registrasi Layanan Publikasi</label>
-                                <input class="form-control" id="role" name="role" type="text" value="<?= $user->is_registered; ?>">
-                            </div>
-                            <div class="mb-3">
                                 <label class="small mb-1" for="Phone">User Sejak</label>
                                 <input class="form-control" id="phone" name="phone" type="text" value="<?= Time::parse($user->created_at)->toDateString(); ?>">
                             </div>

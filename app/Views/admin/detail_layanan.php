@@ -49,11 +49,11 @@
                                     </div>
                                 </fieldset>
                                 <div class="form-group mb-4">
-                                    <label class="mb-2" for="nama">Jenis Layanan</label>
+                                    <label class="mb-2" for="jenis_layanan">Jenis Layanan</label>
                                     <div class="form-control"><?=  $results['jenis_layanan']; ?></div>
                                 </div>      
                                 <div class="form-group mb-4">
-                                    <label class="mb-2" for="email">Bukti Transfer</label>
+                                    <label class="mb-2" for="bukti_transfer">Bukti Transfer</label>
                                     <img class="form-control mt-1" src="/assets/img/bukti_transfer/<?= $results['bukti_transfer']; ?>">
                                     <div class="input-group">
                                         <span class="form-control mt-2"><?= $results['bukti_transfer']; ?></span>
@@ -65,16 +65,20 @@
                                     <div class="form-control"><?= $results['metode_konsultasi']; ?></div>
                                 </div>
                                 <div class="form-group mb-4">
-                                    <label class="mb-2" for="phone">Paper</label>
+                                    <label class="mb-2" for="paper">Paper</label>
                                     <div class="input-group">
                                         <span class="form-control mt-2"><?= $results['paper']; ?></span>
                                         <button class="btn btn-outline-success" type="button" onclick="location.href='/admin/download_paper/<?= $results['id_layanan']; ?>'">Download</button>
                                     </div>
                                 </div>
                                 <div class="form-group mb-4">
-                                    <label class="mb-2" for="layanan_publikasi">Registrasi Layanan Publikasi</label><br>
-                                    <div class="form-control"><?= $results['is_registered']; ?></div>                               
+                                    <label class="mb-2" for="layanan_publikasi">Registrasi Layanan Publikasi</label>
+                                    <div class="input-group">
+                                        <span class="form-control mt-2"><?= $results['is_registered']; ?></span>
+                                        <button class="btn btn-outline-primary" type="button" onclick="location.href='/admin/edit_status/<?= $results['id']; ?>'">Edit</button>
+                                    </div>
                                 </div>
+
                             <button class="btn btn-warning m-1 text-white" onclick="location.href='/admin'" type="button"> Kembali ke Kelola User</button>
                             <a href="/admin/delete_layanan/<?= $results['id_layanan']; ?>">
                                 <button class="btn btn-danger m-1" onclick="return confirm('Are you sure?');" type="submit"><i class="fa fa-trash" aria-hidden="true"></i> Hapus</button>
