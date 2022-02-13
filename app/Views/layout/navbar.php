@@ -5,7 +5,7 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light text-center">
     <div class="container">
 
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
             <img src="<?= base_url('assets/img/logo.png') ?>" width="35" height="35" alt="">
             P A M I T R A N               
         </a>

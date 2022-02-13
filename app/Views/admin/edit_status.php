@@ -50,7 +50,7 @@
                                     <span class="text-danger"><?= isset($validation) ? display_error($validation, 'role') : '' ?></span>
                                 </div>
                                 <div class="form-group" style="float: right;">
-                                    <a href="/detail_layanan/<?= $user->id; ?>" class="cancel"> Cancel</a>
+                                    <a href="javascript:history.go(-1)" class="cancel"> Cancel</a>
                                     <button type="submit" class="btn btn-primary btn-user btn-block m-1">
                                         Ubah User
                                     </button>
