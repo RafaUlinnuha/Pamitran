@@ -143,7 +143,7 @@
             <h1>Video Pamitran</h1>
             <div class="reveal">
                 <div class="row pt-3">
-                    <div class="video-promo">
+                    <div class="video-promo iframe-container">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/_y9oH6UXEhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
