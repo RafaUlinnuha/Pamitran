@@ -52,19 +52,19 @@
                             <li><a class="dropdown-item" href="/Endoskopi_Training_Center">Endoskopi Training Center</a></li>
                             <li><a class="dropdown-item" href="/Dental_Training_Center">Dental Training Center</a></li>
                             <li><a class="dropdown-item" href="/OSCE_Training_Center">OSCE Training Center</a></li>
-                            <li><a class="dropdown-item" href="/Kerjasama_Penelitian">Kerjasama Penelitian</a></li>
                             <li><a class="dropdown-item" href="/Pamitran_Publication_Services">Pamitran Publication Services</a></li>
-                            <li><a class="dropdown-item" href="/layanan/enam">Enam</a></li>
-                            <li><a class="dropdown-item" href="/layanan/tujuh">Tujuh</a></li>
-                            <li><a class="dropdown-item" href="/delapan">Delapan</a></li>
-                            <li><a class="dropdown-item" href="/layanan/lima">Lima</a></li>
-                            <li><a class="dropdown-item" href="/layanan/enam">Enam</a></li>
-                            <li><a class="dropdown-item" href="/layanan/tujuh">Tujuh</a></li>
-                            <li><a class="dropdown-item" href="/delapan">Delapan</a></li>
-                            <li><a class="dropdown-item" href="/layanan/lima">Lima</a></li>
-                            <li><a class="dropdown-item" href="/layanan/enam">Enam</a></li>
-                            <li><a class="dropdown-item" href="/layanan/tujuh">Tujuh</a></li>
-                            <li><a class="dropdown-item" href="/delapan">Delapan</a></li>
+                            <li><a class="dropdown-item" href="/Kerjasama_Penelitian">Kerjasama Penelitian</a></li>
+                            <li><a class="dropdown-item" href="/Apotik_Pendidikan">Apotik Pendidikan</a></li>
+                            <li><a class="dropdown-item" href="/Puspa_Day_Care">Puspa Day Care</a></li>
+                            <li><a class="dropdown-item" href="/Kemoterapi">Kemoterapi</a></li>
+                            <li><a class="dropdown-item" href="/Perawatan_Covid">Perawatan Covid</a></li>
+                            <li><a class="dropdown-item" href="/Palliative_Care">Palliative Care</a></li>
+                            <li><a class="dropdown-item" href="/Poliklinik_Infeksi">Poliklinik Infeksi</a></li>
+                            <li><a class="dropdown-item" href="/Pojok_Lansia">Pojok Lansia</a></li>
+                            <li><a class="dropdown-item" href="/Cafe_dan_Restoran">Cafe dan Restoran</a></li>
+                            <li><a class="dropdown-item" href="/ATM Center">ATM Center</a></li>
+                            <li><a class="dropdown-item" href="/Laboratorium">Laboratorium</a></li>
+                            <li><a class="dropdown-item" href="/Conference_Rooms">Conference Rooms</a></li>
                         </ul>
                     </li>
                     <?php if(!$session->isLoggedIn): ?>

@@ -1,7 +1,7 @@
 const success = $('#success').data('swal');
 if(success){
     Swal.fire({
-        title: 'Success',
+        title: 'Sukses',
         text: success,
         icon: 'success'
     })

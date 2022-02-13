@@ -68,7 +68,7 @@ class User extends BaseController
                 ];
                 $this->userModel->updateUser($newDataUser, $id);
                 $this->session->set($newDataUser);
-                $this->session->setFlashData('success', 'Your profile has been updated successfully');
+                $this->session->setFlashData('success', 'Profil anda berhasil diperbaharui');
                 return redirect()->to('user');
             }
         }

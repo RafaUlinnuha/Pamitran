@@ -30,14 +30,14 @@ class ChangePassword extends BaseController
             ];
             $errors = [
                 'current_password' => [
-                    'required' => 'Current password is required'
+                    'required' => 'Kata sandi lama wajib diisi'
                 ],
                 'new_password' => [
-                    'required' => 'New password is required',
+                    'required' => 'Kata sandi baru wajib diisi',
                 ],
                 'repeat_password' => [
-                    'required' => 'Repeat password is required',
-                    'matches' => 'Repeat password does not match new password'
+                    'required' => 'Konfirmasi kata sandi baru wajib diisi',
+                    'matches' => 'Konfirmasi kata sandi baru tidak cocok dengan kata sandi baru'
                 ]
             ];
             if (!$this->validate($rules, $errors)) {
@@ -51,7 +51,7 @@ class ChangePassword extends BaseController
                     return redirect()->to('/ChangePassword/edit');
                 } else {
                     if($current_password == $new_password){
-                        $this->session->setFlashData('not_unique', 'new password cannot be the same as current password');
+                        $this->session->setFlashData('not_unique', 'Kata sandi baru tidak boleh sama dengan kata sandi lama');
                         return redirect()->to('/ChangePassword/edit');
                     } else {
                         $id = $this->request->getVar('id');
@@ -59,7 +59,7 @@ class ChangePassword extends BaseController
                         $newDataPassword = ['password' => $password_hash];
                         $this->session->set($newDataPassword);
                         $this->userModel->updateUser($newDataPassword, $id);
-                        $this->session->setFlashData('success', 'Your password has been updated successfully');
+                        $this->session->setFlashData('success', 'Kata sandi anda berhasil diperbaharui');
                         return redirect()->to('user');
                     }
                 }

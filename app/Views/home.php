@@ -93,15 +93,7 @@
                             <button class="btn btn-outline-dark" onclick="document.location='/OSCE_Training_Center'">Read More</button>
                         </div>
                     </div>
-                    
-                    <div class="col-12 col-lg-3 mb-4">
-                        <div class="card card-1 p-3 text-center">
-                            <h4 class="py-2">Kerjasama Penelitian</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/Kerjasama_Penelitian'">Read More</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="row pt-3">
+
                     <div class="col-12 col-lg-3 mb-4">
                         <div class="card card-1 p-3 text-center">
                             <h4 class="py-2">Pamitran Publication Services</h4>
@@ -109,24 +101,92 @@
                         </div>
                     </div>
 
+                </div>
+                <div class="row pt-3">
                     <div class="col-12 col-lg-3 mb-4">
                         <div class="card card-1 p-3 text-center">
-                            <h4 class="py-2">Enam</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/layanan/enam'">Read More</button>
+                            <h4 class="py-2">Kerjasama Penelitian</h4>
+                            <button class="btn btn-outline-dark" onclick="document.location='/Kerjasama_Penelitian'">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-3 mb-4">
+                        <div class="card card-1 p-3 text-center">
+                            <h4 class="py-2">Apotik Pendidikan</h4>
+                            <button class="btn btn-outline-dark" onclick="document.location='/Apotik_Pendidikan'">Read More</button>
                         </div>
                     </div>
                     
                     <div class="col-12 col-lg-3 mb-4">
                         <div class="card card-1 p-3 text-center">
-                            <h4 class="py-2">Tujuh</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/layanan/tujuh'">Read More</button>
+                            <h4 class="py-2">Puspa Day Care</h4>
+                            <button class="btn btn-outline-dark" onclick="document.location='/Puspa_Day_Care'">Read More</button>
                         </div>
                     </div>
                     
                     <div class="col-12 col-lg-3">
                         <div class="card card-1 p-3 text-center">
-                            <h4 class="py-2">Delapan</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/delapan'">Read More</button>
+                            <h4 class="py-2">Kemoterapi</h4>
+                            <button class="btn btn-outline-dark" onclick="document.location='/Kemoterapi'">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-3">
+                    <div class="col-12 col-lg-3 mb-4">
+                        <div class="card card-1 p-3 text-center">
+                            <h4 class="py-2">Perawatan Covid</h4>
+                            <button class="btn btn-outline-dark" onclick="document.location='/Perawatan_Covid'">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-3 mb-4">
+                        <div class="card card-1 p-3 text-center">
+                            <h4 class="py-2">Palliative Care</h4>
+                            <button class="btn btn-outline-dark" onclick="document.location='/Palliative_Care'">Read More</button>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-3 mb-4">
+                        <div class="card card-1 p-3 text-center">
+                            <h4 class="py-2">Poliklinik Infeksi</h4>
+                            <button class="btn btn-outline-dark" onclick="document.location='/Poliklinik_Infeksi'">Read More</button>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-3 mb-4">
+                        <div class="card card-1 p-3 text-center">
+                            <h4 class="py-2">Pojok Lansia</h4>
+                            <button class="btn btn-outline-dark" onclick="document.location='/Pojok_Lansia'">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col-12 col-lg-3 mb-4">
+                        <div class="card card-1 p-3 text-center">
+                            <h4 class="py-2">Cafe dan Restoran</h4>
+                            <button class="btn btn-outline-dark" onclick="document.location='/Cafe_dan_Restoran'">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-3 mb-4">
+                        <div class="card card-1 p-3 text-center">
+                            <h4 class="py-2">ATM Center</h4>
+                            <button class="btn btn-outline-dark" onclick="document.location='/ATM_Center'">Read More</button>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-3 mb-4">
+                        <div class="card card-1 p-3 text-center">
+                            <h4 class="py-2">Laboratorium</h4>
+                            <button class="btn btn-outline-dark" onclick="document.location='/Laboratorium'">Read More</button>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-lg-3">
+                        <div class="card card-1 p-3 text-center">
+                            <h4 class="py-2">Conference Rooms</h4>
+                            <button class="btn btn-outline-dark" onclick="document.location='/Conference_Rooms'">Read More</button>
                         </div>
                     </div>
                 </div>

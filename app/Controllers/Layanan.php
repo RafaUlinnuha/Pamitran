@@ -41,6 +41,14 @@ class Layanan extends BaseController
         ];
         return view('layanan/OSCE_Training_Center', $data);
     }
+    
+    public function Pamitran_Publication_Services()
+    {
+        $data = [
+            'title' => 'Pamitran_Publication_Services'
+        ];
+        return view('layanan/Pamitran_Publication_Services', $data);
+    }
 
     public function Kerjasama_Penelitian()
     {
@@ -50,37 +58,96 @@ class Layanan extends BaseController
         return view('layanan/Kerjasama_Penelitian', $data);
     }
 
-    public function Pamitran_Publication_Services()
+
+    public function Apotik_Pendidikan()
     {
         $data = [
-            'title' => 'Pamitran_Publication_Services'
+            'title' => 'Apotik Pendidikan'
         ];
-        return view('layanan/Pamitran_Publication_Services', $data);
+        return view('layanan/Apotik_Pendidikan', $data);
     }
 
-    public function enam()
+    public function Puspa_Day_Care()
     {
         $data = [
-            'title' => 'Enam'
+            'title' => 'Puspa Day Care'
         ];
-        return view('layanan/enam', $data);
+        return view('layanan/Puspa_Day_Care', $data);
     }
 
-    public function tujuh()
+    public function Kemoterapi()
     {
         $data = [
-            'title' => 'Tujuh'
+            'title' => 'Kemoterapi'
         ];
-        return view('layanan/tujuh', $data);
+        return view('layanan/Kemoterapi', $data);
     }
 
-    public function delapan()
+    public function Perawatan_Covid()
     {
         $data = [
-            'title' => 'Delapan'
+            'title' => 'Perawatan Covid'
         ];
-        return view('layanan/delapan', $data);
+        return view('layanan/Perawatan_Covid', $data);
     }
+
+    public function Palliative_Care()
+    {
+        $data = [
+            'title' => 'Palliative Care'
+        ];
+        return view('layanan/Palliative_Care', $data);
+    }
+    
+    public function Poliklinik_Infeksi()
+    {
+        $data = [
+            'title' => 'Poliklinik Infeksi'
+        ];
+        return view('layanan/Poliklinik_Infeksi', $data);
+    }
+
+    public function Pojok_Lansia()
+    {
+        $data = [
+            'title' => 'Pojok Lansia'
+        ];
+        return view('layanan/Pojok_Lansia', $data);
+    }
+
+
+    public function Cafe_dan_Restoran()
+    {
+        $data = [
+            'title' => 'Cafe dan Restoran'
+        ];
+        return view('layanan/Cafe_dan_Restoran', $data);
+    }
+
+    public function ATM_Center()
+    {
+        $data = [
+            'title' => 'ATM Center'
+        ];
+        return view('layanan/ATM_Center', $data);
+    }
+
+    public function Laboratorium()
+    {
+        $data = [
+            'title' => 'Laboratorium'
+        ];
+        return view('layanan/Laboratorium', $data);
+    }
+
+    public function Conference_Rooms()
+    {
+        $data = [
+            'title' => 'Conference Rooms'
+        ];
+        return view('layanan/Conference_Rooms', $data);
+    }
+
 
     public function tambah_bukti_transfer()
     {
