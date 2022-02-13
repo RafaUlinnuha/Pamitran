@@ -61,18 +61,6 @@
                                     ?>                                    
                                     <span class="text-danger"><?= isset($validation) ? display_error($validation, 'role') : '' ?></span>
                                 </div>
-                                <div class="form-group mb-4">
-                                    <label class="mb-2" for="role">Registrasi Layanan Publikasi</label><br>
-                                    <?php 
-                                        $is_registered = [
-                                            'Belum Teregristrasi' => 'Belum Teregristrasi', 
-                                            'Sedang Dalam Proses Verifikasi' => 'Sedang Dalam Proses Verifikasi', 
-                                            'Sudah Teregristrasi' => 'Sudah Teregristrasi',
-                                        ];
-                                        echo form_dropdown('is_registered', $is_registered, $user->is_registered, 'class="form-select"'); 
-                                    ?>                                    
-                                    <span class="text-danger"><?= isset($validation) ? display_error($validation, 'role') : '' ?></span>
-                                </div>
                                 <div class="form-group" style="float: right;">
                                     <a href="/admin/<?= $user->id; ?>" class="cancel"> Cancel</a>
                                     <button type="submit" class="btn btn-primary btn-user btn-block m-1">
