@@ -161,7 +161,7 @@ class Admin extends BaseController
             $this->userModel->updateUser($newDataUser, $id);
 
             $this->session->setFlashData('success', 'Data telah berhasil diperbaharui');
-            return redirect()->to('layanan_publikasi');
+            return redirect()->to('layanan-publikasi');
         }
         return view('admin/edit_status', $data);
     }
@@ -187,7 +187,7 @@ class Admin extends BaseController
 
 
         $this->session->setFlashData('success', 'Data berhasil dihapus');
-        return redirect()->to('layanan_publikasi');
+        return redirect()->to('layanan-publikasi');
     }
 
 }

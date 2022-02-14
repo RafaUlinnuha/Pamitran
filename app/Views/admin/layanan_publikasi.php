@@ -42,7 +42,7 @@
                                 <td style="text-align: left;"><?= $result['jenis_layanan']; ?></td>
                                 <td style="text-align: left;"><?= $result['metode_konsultasi']; ?></td>
                                 <td style="text-align: left;"><?= $result['is_registered']; ?></td>
-                                <td><button class="btn btn-success" onclick="location.href='/detail_layanan/<?= $result['id_layanan']; ?>';" type="button">Detail</button></td>
+                                <td><button class="btn btn-success" onclick="location.href='/detail-layanan/<?= $result['id_layanan']; ?>';" type="button">Detail</button></td>
                             </tr>
                             <?php $i++; ?>
                         <?php endforeach; ?>

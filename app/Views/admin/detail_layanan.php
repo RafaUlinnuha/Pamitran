@@ -57,7 +57,7 @@
                                     <img class="form-control mt-1" src="/assets/img/bukti_transfer/<?= $results['bukti_transfer']; ?>">
                                     <div class="input-group">
                                         <span class="form-control mt-2"><?= $results['bukti_transfer']; ?></span>
-                                        <button class="btn btn-outline-success" type="button" onclick="location.href='/admin/download_bukti_transfer/<?= $results['id_layanan']; ?>'">Download</button>
+                                        <button class="btn btn-outline-success" type="button" onclick="location.href='/admin/download-bukti-transfer/<?= $results['id_layanan']; ?>'">Download</button>
                                     </div>
                                 </div>
                                 <div class="form-group mb-4">
@@ -68,19 +68,19 @@
                                     <label class="mb-2" for="paper">Paper</label>
                                     <div class="input-group">
                                         <span class="form-control mt-2"><?= $results['paper']; ?></span>
-                                        <button class="btn btn-outline-success" type="button" onclick="location.href='/admin/download_paper/<?= $results['id_layanan']; ?>'">Download</button>
+                                        <button class="btn btn-outline-success" type="button" onclick="location.href='/admin/download-paper/<?= $results['id_layanan']; ?>'">Download</button>
                                     </div>
                                 </div>
                                 <div class="form-group mb-4">
                                     <label class="mb-2" for="layanan_publikasi">Registrasi Layanan Publikasi</label>
                                     <div class="input-group">
                                         <span class="form-control mt-2"><?= $results['is_registered']; ?></span>
-                                        <button class="btn btn-outline-primary" type="button" onclick="location.href='/admin/edit_status/<?= $results['id']; ?>'">Edit</button>
+                                        <button class="btn btn-outline-primary" type="button" onclick="location.href='/admin/edit-status/<?= $results['id']; ?>'">Edit</button>
                                     </div>
                                 </div>
 
                             <button class="btn btn-warning m-1 text-white" onclick="location.href='/admin'" type="button"> Kembali ke Kelola User</button>
-                            <a href="/admin/delete_layanan/<?= $results['id_layanan']; ?>">
+                            <a href="/admin/delete-layanan/<?= $results['id_layanan']; ?>">
                                 <button class="btn btn-danger m-1" onclick="return confirm('Are you sure?');" type="submit"><i class="fa fa-trash" aria-hidden="true"></i> Hapus</button>
                             </a>
                         </div>

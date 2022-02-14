@@ -76,28 +76,28 @@
                     <div class="col-12 col-lg-3 mb-4">
                         <div class="card card-1 p-3 text-center">
                             <h4 class="py-2">Endoskopi Training Center</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/Endoskopi_Training_Center'">Read More</button>
+                            <button class="btn btn-outline-dark" onclick="document.location='/Endoskopi-Training-Center'">Read More</button>
                         </div>
                     </div>
 
                     <div class="col-12 col-lg-3 mb-4">
                         <div class="card card-1 p-3 text-center">
                             <h4 class="py-2">Dental Training Center</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/Dental_Training_Center'">Read More</button>
+                            <button class="btn btn-outline-dark" onclick="document.location='/Dental-Training-Center'">Read More</button>
                         </div>
                     </div>
                     
                     <div class="col-12 col-lg-3 mb-4">
                         <div class="card card-1 p-3 text-center">
                             <h4 class="py-2">OSCE Training Center</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/OSCE_Training_Center'">Read More</button>
+                            <button class="btn btn-outline-dark" onclick="document.location='/OSCE-Training-Center'">Read More</button>
                         </div>
                     </div>
 
                     <div class="col-12 col-lg-3 mb-4">
                         <div class="card card-1 p-3 text-center">
                             <h4 class="py-2">Pamitran Publication Services</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/Pamitran_Publication_Services'">Read More</button>
+                            <button class="btn btn-outline-dark" onclick="document.location='/Pamitran-Publication-Services'">Read More</button>
                         </div>
                     </div>
 
@@ -106,21 +106,21 @@
                     <div class="col-12 col-lg-3 mb-4">
                         <div class="card card-1 p-3 text-center">
                             <h4 class="py-2">Kerjasama Penelitian</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/Kerjasama_Penelitian'">Read More</button>
+                            <button class="btn btn-outline-dark" onclick="document.location='/Kerjasama-Penelitian'">Read More</button>
                         </div>
                     </div>
 
                     <div class="col-12 col-lg-3 mb-4">
                         <div class="card card-1 p-3 text-center">
                             <h4 class="py-2">Apotik Pendidikan</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/Apotik_Pendidikan'">Read More</button>
+                            <button class="btn btn-outline-dark" onclick="document.location='/Apotik-Pendidikan'">Read More</button>
                         </div>
                     </div>
                     
                     <div class="col-12 col-lg-3 mb-4">
                         <div class="card card-1 p-3 text-center">
                             <h4 class="py-2">Puspa Day Care</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/Puspa_Day_Care'">Read More</button>
+                            <button class="btn btn-outline-dark" onclick="document.location='/Puspa-Day-Care'">Read More</button>
                         </div>
                     </div>
                     
@@ -136,28 +136,28 @@
                     <div class="col-12 col-lg-3 mb-4">
                         <div class="card card-1 p-3 text-center">
                             <h4 class="py-2">Perawatan Covid</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/Perawatan_Covid'">Read More</button>
+                            <button class="btn btn-outline-dark" onclick="document.location='/Perawatan-Covid'">Read More</button>
                         </div>
                     </div>
 
                     <div class="col-12 col-lg-3 mb-4">
                         <div class="card card-1 p-3 text-center">
                             <h4 class="py-2">Palliative Care</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/Palliative_Care'">Read More</button>
+                            <button class="btn btn-outline-dark" onclick="document.location='/Palliative-Care'">Read More</button>
                         </div>
                     </div>
                     
                     <div class="col-12 col-lg-3 mb-4">
                         <div class="card card-1 p-3 text-center">
                             <h4 class="py-2">Poliklinik Infeksi</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/Poliklinik_Infeksi'">Read More</button>
+                            <button class="btn btn-outline-dark" onclick="document.location='/Poliklinik-Infeksi'">Read More</button>
                         </div>
                     </div>
                     
                     <div class="col-12 col-lg-3 mb-4">
                         <div class="card card-1 p-3 text-center">
                             <h4 class="py-2">Pojok Lansia</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/Pojok_Lansia'">Read More</button>
+                            <button class="btn btn-outline-dark" onclick="document.location='/Pojok-Lansia'">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -165,14 +165,14 @@
                     <div class="col-12 col-lg-3 mb-4">
                         <div class="card card-1 p-3 text-center">
                             <h4 class="py-2">Cafe dan Restoran</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/Cafe_dan_Restoran'">Read More</button>
+                            <button class="btn btn-outline-dark" onclick="document.location='/Cafe-dan-Restoran'">Read More</button>
                         </div>
                     </div>
 
                     <div class="col-12 col-lg-3 mb-4">
                         <div class="card card-1 p-3 text-center">
                             <h4 class="py-2">ATM Center</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/ATM_Center'">Read More</button>
+                            <button class="btn btn-outline-dark" onclick="document.location='/ATM-Center'">Read More</button>
                         </div>
                     </div>
                     
@@ -186,7 +186,7 @@
                     <div class="col-12 col-lg-3">
                         <div class="card card-1 p-3 text-center">
                             <h4 class="py-2">Conference Rooms</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/Conference_Rooms'">Read More</button>
+                            <button class="btn btn-outline-dark" onclick="document.location='/Conference-Rooms'">Read More</button>
                         </div>
                     </div>
                 </div>

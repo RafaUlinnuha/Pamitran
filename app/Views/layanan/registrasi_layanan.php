@@ -30,7 +30,7 @@
                         <h3 class="mb-4">Layanan Publikasi</h3>
                     </div>
                     <div class="card-body">
-                        <form action="<?= base_url('registrasi_layanan'); ?>" method="POST" class="form-container user" autocomplete="off" enctype="multipart/form-data">
+                        <form action="<?= base_url('registrasi-layanan'); ?>" method="POST" class="form-container user" autocomplete="off" enctype="multipart/form-data">
                             <?= csrf_field(); ?>
                             <input type="hidden" name="id" value="<?= $this->session->id; ?>">
                             <fieldset disabled="disabled">

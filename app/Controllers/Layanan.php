@@ -45,7 +45,7 @@ class Layanan extends BaseController
     public function Pamitran_Publication_Services()
     {
         $data = [
-            'title' => 'Pamitran_Publication_Services'
+            'title' => 'Pamitran Publication Services'
         ];
         return view('layanan/Pamitran_Publication_Services', $data);
     }
@@ -170,7 +170,7 @@ class Layanan extends BaseController
 
         if(!$this->session->isLoggedIn){
             $this->session->setFlashData('errors', 'Silakan login terlebih dahulu');
-            return redirect()->to('/Pamitran_Publication_Services');
+            return redirect()->to('/Pamitran-Publication-Services');
         }
 
         $data = [

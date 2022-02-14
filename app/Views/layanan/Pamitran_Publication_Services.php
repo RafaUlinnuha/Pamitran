@@ -22,7 +22,7 @@
             <div class="row pt-3">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita aliquid dolorum similique! Debitis quas modi mollitia sequi? Vitae quae provident nulla itaque at neque commodi soluta! Explicabo eius excepturi ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos doloribus commodi voluptate, ab illum obcaecati necessitatibus sunt praesentium assumenda qui quo temporibus minus magnam deleniti quibusdam velit, tenetur possimus? Autem?</p>
             </div>
-            <button class="btn btn-primary mt-4" onclick="location.href='registrasi_layanan';" type="button">Registrasi Layanan</button>
+            <button class="btn btn-primary mt-4" onclick="location.href='registrasi-layanan';" type="button">Registrasi Layanan</button>
         </div>
     </section>
 

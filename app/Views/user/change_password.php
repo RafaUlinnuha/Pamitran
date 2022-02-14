@@ -26,7 +26,7 @@
                         <h3 class="mb-4">Ubah Kata Sandi</h3>
                     </div>
                     <div class="card-body">
-                        <form action="<?= base_url('change_password'); ?>" method="POST" class="form-container user" autocomplete="off">
+                        <form action="<?= base_url('change-password'); ?>" method="POST" class="form-container user" autocomplete="off">
                             <?= csrf_field(); ?>
                             <input type="hidden" name="id" value="<?= $this->session->id; ?>">
                             <input type="hidden" name="password" value="<?= $this->session->password; ?>">
