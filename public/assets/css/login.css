@@ -6,3 +6,66 @@
   cursor: pointer;
   width: 100%;
 }
+
+
+.box{
+  background-image: url('/assets/img/auth/elemen2.png');
+  width: 707px;
+  height: 683px;
+  margin: 110px auto 60px;
+  background-size: cover;
+  text-align: center;
+}
+
+.register_box{
+  background-image: url('/assets/img/auth/elemen3.png');
+  width: 707px;
+  height: 787px;
+  margin: 110px auto 110px;
+  background-size: cover;
+  text-align: center;
+}
+
+.login_card{
+  margin-top: 80px;
+}
+
+.register_card{
+  margin-top: 80px;
+}
+
+.elemen_1{
+  position: absolute;
+  right: 0;
+  margin-right: 32px;
+  z-index: -5;
+  transform: translateY(-25%);
+}
+.elemen_2{
+  position: absolute;
+  margin-left: 32px;
+  left: 0;
+  z-index: -5;
+  transform: rotate(180deg) translateY(60%);
+}
+
+@media(min-width: 2500px){
+  .elemen_1, .elemen_2{
+      opacity: 0;
+      transition: 0.9s ease-in-out;
+  }
+} 
+
+@media(max-width: 1210px){
+  .elemen_1, .elemen_2{
+      opacity: 0;
+      transition: 0.9s ease-in-out;
+  }
+} 
+
+@media(max-width: 770px){
+  .box, .register_box{
+      background-image: none;
+      transition: 0.9s ease-in-out;
+  }
+} 

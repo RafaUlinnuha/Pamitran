@@ -46,17 +46,24 @@
         </div>
     </section>
 
+    <img src="<?= base_url('assets/img/home/elemen1.png') ?>" class="elemen_1">
+    <img src="<?= base_url('assets/img/home/elemen2.png') ?>" class="elemen_2">
     <section class="about p-5">
         <div class="container p-5">
-            <h1 style="background-color: rgba(0, 168, 156, 1);" class="title">P A M I T R A N</h1>
+            <h1 class="title about_title">P A M I T R A N</h1>
             <div class="reveal">
-                <div class="row pt-3">
-                    <p class="p-home">Pusat Akademi, Inovasi, Teknologi, dan Riset (PAMITRAN) - Medical Education, Development, and Innovation Center Universitas Padjadjaran (MEDIC-UP) adalah suatu wadah untuk mengintegrasikan fakultas rumpun kesehatan(Fakultas Kedokteran, Fakultas Kedokteran Gigi, Fakultas Farmasi, Fakultas Keperawatan, dan Fakultas Psikologi) dan juga fakultas lain yang terkait dengan bidang kesehatan serta fakultas ekonomi dan bisnis. 
+                <div class="row about_text">
+                    <p>
+                        Pusat Akademi, Inovasi, Teknologi, dan Riset (PAMITRAN) - Medical Education, Development, and Innovation Center Universitas Padjadjaran (MEDIC-UP) adalah suatu wadah untuk mengintegrasikan fakultas rumpun kesehatan (Fakultas Kedokteran, Fakultas Kedokteran Gigi, Fakultas Farmasi, Fakultas Keperawatan, dan Fakultas Psikologi) dan juga fakultas lain yang terkait dengan bidang kesehatan serta fakultas ekonomi dan bisnis. 
                     </p>
                     <br><br>
-                    <p class="p-home">Masing-masing fakultas dapat mengembangkan ide bisnisnya dengan memanfaatkan ruangan yang ada serta rencana sinergitasnya dengan kalangan swasta atau publik. Dengan kolaborasi tersebut, pemanfaatan Gedung Eijkman diharapkan lebih optimal dan nilai tambah yang diperoleh dapat dimanfaatkan secara merata oleh fakultas-fakultas tersebut dalam memajukan kegiatan Tri Dharma Perguruan Tinggi.</p>
+                    <p>
+                        Masing-masing fakultas dapat mengembangkan ide bisnisnya dengan memanfaatkan ruangan yang ada serta rencana sinergitasnya dengan kalangan swasta atau publik. Dengan kolaborasi tersebut, pemanfaatan Gedung Eijkman diharapkan lebih optimal dan nilai tambah yang diperoleh dapat dimanfaatkan secara merata oleh fakultas-fakultas tersebut dalam memajukan kegiatan Tri Dharma Perguruan Tinggi.
+                    </p>
                     <br><br>
-                    <p class="p-home">PAMITRAN-UP dibentuk pada tanggal 1 September 2021 di Bandung berdasarkan Keputusan Rektor Universitas Padjadjaran Nomor: 2069/UN6.RKT/ Kep/HK/2021 tentang Pembentukan dan Pengangkatan Pengelola Satuan Usaha Pusat Akademik, Inovasi, Teknologi, dan Riset Kesehatan Universitas Padjadjaran (PAMITRAN-UP).</p>
+                    <p>
+                        PAMITRAN-UP dibentuk pada tanggal 1 September 2021 di Bandung berdasarkan Keputusan Rektor Universitas Padjadjaran Nomor: 2069/UN6.RKT/ Kep/HK/2021 tentang Pembentukan dan Pengangkatan Pengelola Satuan Usaha Pusat Akademik, Inovasi, Teknologi, dan Riset Kesehatan Universitas Padjadjaran (PAMITRAN-UP).
+                    </p>
                 </div>
             </div>
         </div>
@@ -67,10 +74,10 @@
     
     <section class="services text-center">
         <div class="container p-5">
-            <h1>L A Y A N A N</h1>
+            <h1  class="title layanan_title">L A Y A N A N</h1>
             <div class="reveal">
-                <div class="row pt-3">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti rem illum reiciendis, minima voluptatum exercitationem hic neque. Atque, itaque officiis nam necessitatibus accusamus eaque magni illo. Atque iusto sint reiciendis!</p>
+                <div class="row layanan_text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis urna sed vulputate urna iaculis tristique. Erat turpis ultrices in posuere est. Venenatis ante in vivamus tristique elit tempor. Iaculis in sit sed enim odio. Risus, eu morbi libero quis sit sed mattis nulla. Amet fusce pellentesque sodales pellentesque morbi. Ultricies tincidunt imperdiet sit non dolor at. Urna vel lobortis mauris venenatis, at a dolor.</p>
                 </div>
                 <div class="row pt-3">
                     <div class="col-12 col-lg-3 mb-4">
@@ -198,12 +205,15 @@
 
     <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 210"><path fill="#e7cf7a" fill-opacity="1" d="M0,64L40,64C80,64,160,64,240,90.7C320,117,400,171,480,165.3C560,160,640,96,720,85.3C800,75,880,117,960,122.7C1040,128,1120,96,1200,74.7C1280,53,1360,43,1400,37.3L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg> -->
     
+
     <section class="video text-center p-5">
         <div class="container p-5">
-            <div class="reveal">
+            <h1  class="title video_title">VIDEO PROFIL</h1>
+            <div class="video_box">
+                <!-- <img src="<?= base_url('assets/img/home/ellipse1.png') ?>" class="ellipse_1"> -->
                 <div class="row pt-3">
-                    <div class="video-promo iframe-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_y9oH6UXEhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="iframe_container">
+                        <iframe src="https://www.youtube.com/embed/_y9oH6UXEhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
