@@ -66,6 +66,5 @@
 @media(max-width: 770px){
   .box, .register_box{
       background-image: none;
-      transition: 0.9s ease-in-out;
   }
 } 

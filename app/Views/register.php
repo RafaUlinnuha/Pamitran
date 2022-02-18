@@ -42,7 +42,7 @@
                                                 <input type="password" class="form-control form-control-user" placeholder="Konfirmasi Kata Sandi" id="password_confirm" name="password_confirm">
                                                 <span class="text-danger"><?= isset($validation) ? display_error($validation, 'password_confirm') : '' ?></span>
                                             </div>
-                                        <div class="text-center mt-4">
+                                        <div class="text-center mt-4 p-2">
                                             <button type="submit"  class="btn btn-primary btn-user btn-block">
                                                 Register
                                             </button>

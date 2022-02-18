@@ -33,7 +33,7 @@
                                             <span class="text-danger"><?= isset($validation) ? display_error($validation, 'password') : '' ?></span>
                                         </div>
                                         <br>
-                                        <div class="text-center mt-4">
+                                        <div class="text-center mt-4 p-2">
                                             <button type="submit" class="btn btn-primary btn-user btn-block">
                                                 Login
                                             </button>

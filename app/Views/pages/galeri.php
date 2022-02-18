@@ -34,7 +34,4 @@
     </section>
 
     <img src="<?= base_url('assets/img/gallery/elemen1.png') ?>" class="elemen_2">
-    <?= $this->section('custom_js') ?>
-        <script src="<?= base_url('assets/js/pages.js') ?>"></script>
-    <?= $this->endSection('custom_js') ?>
 <?= $this->endSection('content'); ?>

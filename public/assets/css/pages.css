@@ -6,6 +6,8 @@
     margin: 198px 0px 86px 0px;
     padding: 18px;
     position: relative;
+    -webkit-animation: moving 10s infinite;
+    animation: moving 10s infinite;
 }
 
 .galeri_title:after {
@@ -52,6 +54,11 @@ section{
     .elemen_1, .elemen_2{
         opacity: 0;
         transition: 0.9s ease-in-out;
+    }
+    .galeri_title{
+        margin-top: 72px;
+        transition: 0.9s ease-in-out;
+        transition-delay: 0.8s;
     }
 } 
 
