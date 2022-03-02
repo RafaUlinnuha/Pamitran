@@ -12,6 +12,10 @@
     height: 100vh;
 }
 
+.container-home{
+    padding: 45px;
+}
+
 h1{
     font-size: 36px;
     font-weight: 800;
@@ -28,6 +32,7 @@ h1{
     font-size: 72px;
     background: #00A89C;
     border-radius: 8px;
+    padding: 22px;
 }
 
 .layanan_title{
@@ -40,7 +45,28 @@ h1{
     font-weight: 600;
     font-size: 72px;
     line-height: 38px;
+    margin-bottom: 100px;
 }
+
+.about_text{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 36px;
+    color: #000000;
+    text-align: justify;
+}
+
+.layanan_text{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 36px;
+    margin-bottom: 82px;
+    color: #000000;
+    text-align: center;
+}
+
 
 section{
     justify-content: center;
@@ -48,12 +74,12 @@ section{
 
 
 .card{
-    border-radius: 4px;
-    background: #fff;
+    border-radius: 8px;
     box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
     transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-    padding: 14px 80px 18px 36px;
     cursor: pointer;
+    height: 180px;
+    text-transform: uppercase;
 }
 
 .card:hover{
@@ -61,36 +87,26 @@ section{
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
-.card-1{
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 80px;
+.card-title{
+    padding: 0px 28px;
+    margin-top: auto;
+    font-weight: 600;
+    font-size: 22px;
 }
 
-@media(max-width: 770px){
-    .about_title, .layanan_title, .video_title{
-        font-size: 52px;
-    }
-} 
+.card-1, .card-8, .card-11, .card-14{
+    background-color: #F4AE00;
+}
 
-@media(max-width: 580px){
-    .about_title, .layanan_title, .video_title{
-        font-size: 32px;
-    }
-}  
+.card-3, .card-6, .card-9, .card-16{
+    background-color: #00A89C;
+}
 
-@media(max-width: 990px){
-    .card{
-        margin: 20px;
-    }
-} 
 
-@media(max-width: 1650px){
-    .elemen_1, .elemen_2, .ellipse_1{
-        opacity: 0;
-        transition: 0.9s ease-in-out;
-    }
-} 
+.btn{
+    width: 100%;
+    margin-bottom: 8px;
+}
 
 .reveal{
     position: relative;
@@ -113,19 +129,37 @@ section{
     width: 100%;
     padding-bottom: 56.25%; 
     height: 0;
+    /* margin-left: 60px; */
+    margin: auto;
+    text-align: center;
 }
 
 .iframe_container iframe{
     position: absolute;
     top:0;
     left: 0;
+    bottom: 0;
+    right: 0;
     width: 100%;
     height: 100%;
-    margin-top: 60px;
-    padding: 40px 55px;
+    margin: auto;
+    padding: 40px 45px;
     background: #F4AE00;
     border-radius: 16px;
+    text-align: center;
 }
+
+/* .video_box{
+    background-image: url('/assets/img/home/elemen6.png');
+    width: 100%;
+    height: 100%;
+    width: 1381px;
+    height: 857px;
+    margin: auto;
+    background-size: cover;
+    text-align: center;
+  } */
+  
 
 .elemen_1{
     position: absolute;
@@ -138,22 +172,71 @@ section{
     margin-top: 460px;
 }
 
-.about_text{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-    margin-top: 36px;
-    color: #000000;
-    text-align: justify;
-}
 
-.layanan_text{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-    margin-top: 36px;
-    margin-bottom: 82px;
-    color: #000000;
-    text-align: center;
-}
+@media(max-width: 990px){
+    .card-title{
+        font-size: 20px;
+    }
+} 
 
+@media(max-width: 1650px){
+    .elemen_1, .elemen_2{
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+    }
+    .container-home{
+        padding: 45px 0px;
+    }
+    .video_box{
+        background-image: none;
+    }
+} 
+
+@media(min-width: 768px) and (max-width: 991px){
+    .card-1, .card-5, .card-9, .card-13{
+        background-color: #F4AE00;;
+    }
+    .card-4, .card-8, .card-12, .card-16{
+        background-color: #00A89C;
+    }
+    .card-2, .card-3, .card-6, .card-7, .card-10, .card-11, .card-14{
+        background-color: #fff;
+    }
+} 
+
+@media(max-width: 768px){
+    .about_title, .layanan_title, .video_title{
+        font-size: 48px;
+    }
+    .about_text, .layanan_text{
+        font-size: 18px;
+    }
+    .card-1, .card-5, .card-9, .card-13{
+        background-color: #F4AE00;;
+    }
+    .card-3, .card-7, .card-11, .card-15{
+        background-color: #00A89C;
+    }
+    .card-2, .card-4, .card-6, .card-8, .card-10, .card-12, .card-14, .card-16{
+        background-color: #fff;
+    }
+    
+    .iframe_container iframe{
+        padding: 10px;
+    }
+    
+} 
+
+@media(max-width: 580px){
+    .about_title, .layanan_title, .video_title{
+        margin: 8px auto;
+        font-size: 32px;
+    }
+    .about_text, .layanan_text{
+        font-size: 16px;
+    }
+    .container {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}  

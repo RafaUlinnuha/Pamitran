@@ -1,22 +1,38 @@
-.card{
-    border-radius: 4px;
-    background: #fff;
-    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-    padding: 18px 80px 18px 80px;
+.elemen_5{
+    position: absolute;
+    z-index: -5;
+    transform: translateX(15%);
+    margin-top: 10px;
 }
 
-button:hover{
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+.elemen_6{
+    margin-top: 160px;
+    margin-left: 280px;
 }
 
-button{
-    margin-top: 8px;
-    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+.btn-user{
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #F4AE00;
 }
 
-.cancel{
-    text-decoration: none;
-    color: #070707;
-    margin-right: 24px;
-}
+@media(max-width: 1700px){
+    .elemen_6{
+        margin-left: 150px;
+    }
+} 
+
+@media(max-width: 1316px){
+    .elemen_5, .elemen_6{
+        opacity: 0;
+        transition: 0.9s ease-in-out;
+    }
+    .hidden-edit{
+        display: none;
+    }
+    .card-layanan{
+        height: 45%;
+    }
+} 

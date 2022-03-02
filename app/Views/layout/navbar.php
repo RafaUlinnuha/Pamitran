@@ -2,7 +2,7 @@
 	$session = session();
 ?>
 
-<nav class="navbar navbar-expand-md navbar-light bg-light text-center">
+<nav class="navbar navbar-expand-lg navbar-light bg-light text-center">
     <div class="container">
 
         <a class="navbar-brand" href="/">
@@ -55,7 +55,7 @@
                             <li><a class="dropdown-item" href="/Pamitran-Publication-Services">Pamitran Publication Services</a></li>
                             <li><a class="dropdown-item" href="/Kerjasama-Penelitian">Kerjasama Penelitian</a></li>
                             <li><a class="dropdown-item" href="/Apotik-Pendidikan">Apotik Pendidikan</a></li>
-                            <li><a class="dropdown-item" href="/Puspa-Day-Care">Puspa Day Care</a></li>
+                            <li><a class="dropdown-item" href="/Puspa-Day-Care">Puspa Daycare</a></li>
                             <li><a class="dropdown-item" href="/Kemoterapi">Kemoterapi</a></li>
                             <li><a class="dropdown-item" href="/Perawatan-Covid">Perawatan Covid</a></li>
                             <li><a class="dropdown-item" href="/Palliative-Care">Palliative Care</a></li>
@@ -83,7 +83,7 @@
                                 <li><a class="dropdown-item" href="/change-password">Ubah Kata Sandi</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item-sm">
                             <a class="nav-link" href="/logout">Logout</a>
                         </li>
                     <?php endif ?>

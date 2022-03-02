@@ -1,5 +1,68 @@
 .title{
-    text-align: center;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 100px;
+    font-size: 72px;
+    font-weight: 600;
+    position: relative;
+    -webkit-animation: moving 10s infinite;
+    animation: moving 10s infinite;
 }
+
+.title:after {
+    content: ""; 
+    display: block; 
+    margin: 0 auto;
+    padding-top: 18px; 
+    border-bottom: 3px solid black; 
+}
+
+.image_1, .image_2{
+    margin-top: 30px;
+}
+
+.layanan_text{
+    position: relative;
+    margin-top: 28px;
+    text-align: justify;
+}
+
+.img_layanan{
+    position: absolute;
+}
+
+.content{
+    position: relative;
+}
+
+@media(max-width: 1250px){
+    .img_layanan{
+        opacity: 0;
+        transition: 0.5s ease-in-out;
+    }
+    .title{
+        margin-top: 24px;
+        transition: 0.5s ease-in-out;
+        transition-delay: 0.5s;
+    }
+    .content{
+        transition: 0.6s linear;
+        transition-delay: 1s;
+        width: 100%;
+    }
+} 
+
+
+@media(max-width: 7686px){
+    .title{
+        font-size: 48px;
+    }
+} 
+
+
+@media(max-width: 576px){
+    .title{
+        font-size: 32px;
+    }
+} 
+
+
+

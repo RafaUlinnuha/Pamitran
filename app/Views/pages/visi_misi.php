@@ -5,32 +5,46 @@
 <?= $this->endSection('custom_css') ?>
 
 <?= $this->section('content'); ?>
-    <header>
-        <h1 class="h1-pages">Visi Misi</h1>
-    </header>
+    <img src="<?= base_url('assets/img/visi_misi_thumbnail.png') ?>" class="img-fluid" style="width: 100%; height: auto;" alt="Responsive image">
 
     <section class="tentang-kami">
-        <div class="container-lg">
-            <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
-                <div class="col mx-auto">
-                    <img class="img-pages" src="<?= base_url('assets/img/visimisi.jpeg') ?>" class="gallery-item" alt="gallery">
+        <div class="container">
+            <div class="row box p-5 mt-3">
+                <div class="col-1 hidden-md">
+                    <img src="<?= base_url('assets/img/tim_pamitran/elemen1.png') ?>" class="img-fluid elemen_3" alt="Responsive image">
+                </div>
+                <div class="col col-lg-7 col-md-12 col-sm-9 max-md">
+                    <h3 class="title">Visi</h3>
+                    <p class="visi">Menjadi pusat inovasi dan pengembangan kesehatan terintegrasi guna menyiapkan sumber daya insani dan teknologi baru yang berdampak pada masyarakat.</p>
+                </div>
+                <div class="col-4 hidden-md">
+                    <img src="<?= base_url('assets/img/tim_pamitran/elemen2.png') ?>" class="img-fluid elemen_4" alt="Responsive image">
+                </div>
+            </div>
+            <div class="row box p-5">
+                <div class="col-1 hidden-md">
+                    <img src="<?= base_url('assets/img/tim_pamitran/elemen1.png') ?>" class="img-fluid elemen_3" alt="Responsive image">
+                </div>
+                <div class="col col-lg-7 col-md-12 col-sm-9 max-md">
+                    <h3 class="title">Misi</h3>
+                    <p class="misi">Menjadi pusat inovasi dan pengembangan kesehatan terintegrasi guna menyiapkan sumber daya insani dan teknologi baru yang berdampak pada masyarakat.</p>
+                </div>
+            </div>
+            <div class="row box p-5">
+                <div class="col-1 hidden-md">
+                    <img src="<?= base_url('assets/img/tim_pamitran/elemen1.png') ?>" class="img-fluid elemen_3" alt="Responsive image">
+                </div>
+                <div class="col col-lg-7 col-md-12 col-sm-9 max-md">
+                    <h3 class="title">Filosofi</h3>
+                    <p class="filosofi">Menjadi pusat inovasi dan pengembangan kesehatan terintegrasi guna menyiapkan sumber daya insani dan teknologi baru yang berdampak pada masyarakat.</p>
+                </div>
+                <div class="col-4 hidden-md">
+                    <img src="<?= base_url('assets/img/tim_pamitran/elemen3.png') ?>" class="img-fluid elemen_5" alt="Responsive image">
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="gallery-modal" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img class="img-pages" src="<?= base_url('assets/img/visimisi.jpeg') ?>" class="modal-img" alt="modal img">
-                </div>
-            </div>
-        </div>
-    </div>
 
     <?= $this->section('custom_js') ?>
         <script src="<?= base_url('assets/js/pages.js') ?>"></script>

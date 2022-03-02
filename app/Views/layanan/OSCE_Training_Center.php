@@ -2,17 +2,23 @@
 
 <?= $this->section('custom_css') ?>
     <link rel="stylesheet" href="<?= base_url('assets/css/layanan.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/pages.css') ?>">
 <?= $this->endSection('custom_css') ?>
 
 <?= $this->section('content'); ?>
+    <img src="<?= base_url('assets/img/gallery/elemen1.png') ?>" class="elemen_1">
 
-    <section class="about p-5 mt-5">
-        <div class="container p-5">
-            <h1>OSCE Training Center</h1>
-            <div class="row pt-3">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita aliquid dolorum similique! Debitis quas modi mollitia sequi? Vitae quae provident nulla itaque at neque commodi soluta! Explicabo eius excepturi ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos doloribus commodi voluptate, ab illum obcaecati necessitatibus sunt praesentium assumenda qui quo temporibus minus magnam deleniti quibusdam velit, tenetur possimus? Autem?</p>
+    <section class="layanan mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mt-4 content">
+                    <h1 class="title">OSCE TRAINING CENTER</h1>
+                </div>
+                <img src="<?= base_url('assets/img/layanan/FOTO 15-1.png') ?>" class="image_1">
+                <img src="<?= base_url('assets/img/layanan/FOTO 15.png') ?>" class="image_2">
             </div>
         </div>
     </section>
 
+    <img src="<?= base_url('assets/img/gallery/elemen1.png') ?>" class="elemen_2">
 <?= $this->endSection('content'); ?>

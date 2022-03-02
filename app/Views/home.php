@@ -49,8 +49,8 @@
     <img src="<?= base_url('assets/img/home/elemen1.png') ?>" class="elemen_1">
     <img src="<?= base_url('assets/img/home/elemen2.png') ?>" class="elemen_2">
     <section class="about p-5">
-        <div class="container p-5">
-            <h1 class="title about_title">P A M I T R A N</h1>
+        <div class="container container-home">
+            <h1 class="title about_title">PAMITRAN</h1>
             <div class="reveal">
                 <div class="row about_text">
                     <p>
@@ -73,127 +73,160 @@
     <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 210"><path fill="#e7cf7a" fill-opacity="1" d="M0,64L40,64C80,64,160,64,240,90.7C320,117,400,171,480,165.3C560,160,640,96,720,85.3C800,75,880,117,960,122.7C1040,128,1120,96,1200,74.7C1280,53,1360,43,1400,37.3L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg> -->
     
     <section class="services text-center">
-        <div class="container p-5">
-            <h1  class="title layanan_title">L A Y A N A N</h1>
+        <div class="container container-home p-5">
+            <h1  class="title layanan_title">LAYANAN</h1>
             <div class="reveal">
                 <div class="row layanan_text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis urna sed vulputate urna iaculis tristique. Erat turpis ultrices in posuere est. Venenatis ante in vivamus tristique elit tempor. Iaculis in sit sed enim odio. Risus, eu morbi libero quis sit sed mattis nulla. Amet fusce pellentesque sodales pellentesque morbi. Ultricies tincidunt imperdiet sit non dolor at. Urna vel lobortis mauris venenatis, at a dolor.</p>
                 </div>
                 <div class="row pt-3">
-                    <div class="col-12 col-lg-3 mb-4">
-                        <div class="card card-1 p-3 text-center">
-                            <h4 class="py-2">Endoskopi Training Center</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/Endoskopi-Training-Center'">Read More</button>
+                    <div class="col-12 col-lg-3 col-md-6 mb-4">
+                        <div class="card card-1">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">Endoskopi Training Center</h4>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Endoskopi-Training-Center'">Read More</button>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-lg-3 mb-4">
-                        <div class="card card-1 p-3 text-center">
-                            <h4 class="py-2">Dental Training Center</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/Dental-Training-Center'">Read More</button>
+                    <div class="col-12 col-lg-3 col-md-6 mb-4">
+                        <div class="card card-2">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">Dental Training Center</h4>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Dental-Training-Center'">Read More</button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="col-12 col-lg-3 mb-4">
-                        <div class="card card-1 p-3 text-center">
-                            <h4 class="py-2">OSCE Training Center</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/OSCE-Training-Center'">Read More</button>
+                    <div class="col-12 col-lg-3 col-md-6 mb-4">
+                        <div class="card card-3">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">OSCE Training Center</h4>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/OSCE-Training-Center'">Read More</button>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-lg-3 mb-4">
-                        <div class="card card-1 p-3 text-center">
-                            <h4 class="py-2">Pamitran Publication Services</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/Pamitran-Publication-Services'">Read More</button>
+                    <div class="col-12 col-lg-3 col-md-6 mb-4">
+                        <div class="card card-4">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">Publication Services</h4>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Pamitran-Publication-Services'">Read More</button>
+                            </div>
                         </div>
                     </div>
 
                 </div>
                 <div class="row pt-3">
-                    <div class="col-12 col-lg-3 mb-4">
-                        <div class="card card-1 p-3 text-center">
-                            <h4 class="py-2">Kerjasama Penelitian</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/Kerjasama-Penelitian'">Read More</button>
+                    <div class="col-12 col-lg-3 col-md-6 mb-4">
+                        <div class="card card-5">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">Kerjasama Penelitian</h4>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Kerjasama-Penelitian'">Read More</button>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-lg-3 mb-4">
-                        <div class="card card-1 p-3 text-center">
-                            <h4 class="py-2">Apotik Pendidikan</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/Apotik-Pendidikan'">Read More</button>
+                    <div class="col-12 col-lg-3 col-md-6 mb-4">
+                        <div class="card card-6">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">Apotik Pendidikan</h4>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Apotik-Pendidikan'">Read More</button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="col-12 col-lg-3 mb-4">
-                        <div class="card card-1 p-3 text-center">
-                            <h4 class="py-2">Puspa Day Care</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/Puspa-Day-Care'">Read More</button>
+                    <div class="col-12 col-lg-3 col-md-6 mb-4">
+                        <div class="card card-7">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title ">Puspa Daycare</h4>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Puspa-Day-Care'">Read More</button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="col-12 col-lg-3">
-                        <div class="card card-1 p-3 text-center">
-                            <h4 class="py-2">Kemoterapi</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/Kemoterapi'">Read More</button>
+                    <div class="col-12 col-lg-3 col-md-6 mb-4">
+                        <div class="card card-8">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">Kemoterapi</h4>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Kemoterapi'">Read More</button>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="row pt-3">
-                    <div class="col-12 col-lg-3 mb-4">
-                        <div class="card card-1 p-3 text-center">
-                            <h4 class="py-2">Perawatan Covid</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/Perawatan-Covid'">Read More</button>
+                    <div class="col-12 col-lg-3 col-md-6 mb-4">
+                        <div class="card card-9">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">Perawatan Covid</h4>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Perawatan-Covid'">Read More</button>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-lg-3 mb-4">
-                        <div class="card card-1 p-3 text-center">
-                            <h4 class="py-2">Palliative Care</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/Palliative-Care'">Read More</button>
+                    <div class="col-12 col-lg-3 col-md-6 mb-4">
+                        <div class="card card-10">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">Palliative Care</h4>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Palliative-Care'">Read More</button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="col-12 col-lg-3 mb-4">
-                        <div class="card card-1 p-3 text-center">
-                            <h4 class="py-2">Poliklinik Infeksi</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/Poliklinik-Infeksi'">Read More</button>
+                    <div class="col-12 col-lg-3 col-md-6 mb-4">
+                        <div class="card card-11">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">Poliklinik Infeksi</h4>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Poliklinik-Infeksi'">Read More</button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="col-12 col-lg-3 mb-4">
-                        <div class="card card-1 p-3 text-center">
-                            <h4 class="py-2">Pojok Lansia</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/Pojok-Lansia'">Read More</button>
+                    <div class="col-12 col-lg-3 col-md-6 mb-4">
+                        <div class="card card-12">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">Pojok Lansia</h4>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Pojok-Lansia'">Read More</button>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="row pt-3">
-                    <div class="col-12 col-lg-3 mb-4">
-                        <div class="card card-1 p-3 text-center">
-                            <h4 class="py-2">Cafe dan Restoran</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/Cafe-dan-Restoran'">Read More</button>
+                    <div class="col-12 col-lg-3 col-md-6 mb-4">
+                        <div class="card card-13">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">Cafe dan Restoran</h4>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Cafe-dan-Restoran'">Read More</button>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-lg-3 mb-4">
-                        <div class="card card-1 p-3 text-center">
-                            <h4 class="py-2">ATM Center</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/ATM-Center'">Read More</button>
+                    <div class="col-12 col-lg-3 col-md-6 mb-4">
+                        <div class="card card-14">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">ATM Center</h4>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/ATM-Center'">Read More</button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="col-12 col-lg-3 mb-4">
-                        <div class="card card-1 p-3 text-center">
-                            <h4 class="py-2">Laboratorium</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/Laboratorium'">Read More</button>
+                    <div class="col-12 col-lg-3 col-md-6 mb-4">
+                        <div class="card card-15">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">Laboratorium</h4>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Laboratorium'">Read More</button>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="col-12 col-lg-3">
-                        <div class="card card-1 p-3 text-center">
-                            <h4 class="py-2">Conference Rooms</h4>
-                            <button class="btn btn-outline-dark" onclick="document.location='/Conference-Rooms'">Read More</button>
+                    <div class="col-12 col-lg-3 col-md-6 mb-4">
+                        <div class="card card-16">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">Conference Rooms</h4>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Conference-Rooms'">Read More</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -207,16 +240,17 @@
     
 
     <section class="video text-center p-5">
-        <div class="container p-5">
+        <div class="container container-home">
             <h1  class="title video_title">VIDEO PROFIL</h1>
-            <div class="video_box">
-                <!-- <img src="<?= base_url('assets/img/home/ellipse1.png') ?>" class="ellipse_1"> -->
-                <div class="row pt-3">
-                    <div class="iframe_container">
-                        <iframe src="https://www.youtube.com/embed/_y9oH6UXEhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- <div class="video_box"> -->
+                <!-- <div class="row"> -->
+                    <div class="video_box">
+                        <div class="iframe_container">
+                            <iframe src="https://www.youtube.com/embed/_y9oH6UXEhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                     </div>
-                </div>
-            </div>
+                <!-- </div> -->
+            <!-- </div> -->
         </div>
     </section>
 

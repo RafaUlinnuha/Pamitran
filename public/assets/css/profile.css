@@ -1,8 +1,23 @@
 .card{
-    border-radius: 4px;
-    background: #fff;
-    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-    padding: 18px 80px 18px 80px;
+    background: #FFFFFF;
+    border: 5px solid #00A89C;
+    box-sizing: border-box;
+    border-radius: 16px;
+    padding: 30px 32px;
+}
+
+.card-body{
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+
+.card-layanan{
+    padding: 30px 32px;
+    height: 30%;
 }
 
 button:hover{
@@ -14,3 +29,141 @@ button{
     margin-top: 8px;
     transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
 }
+
+.box{
+    transform: translateY(-15%);
+}
+
+.header{
+    background-color: #00A89C;
+    height: 236px;
+    width: 100%;
+}
+
+.elemen_1{
+    transform: translateY(-70%);
+}
+
+.elemen_2{
+    position: absolute;
+    z-index: -5;
+    transform: translateX(15%);
+    margin-top: 10px;
+}
+
+.elemen_3{
+    margin-top: 160px;
+    margin-left: 280px;
+}
+
+.title{
+    font-size: 60px;
+    font-weight: 800;
+    transform: translateY(-140%);
+    color: #fff;
+    margin-left: 30px;
+}
+
+@media(max-width: 1400px){
+    .card-layanan{
+        padding: 20px 52px;
+    }
+    .title{
+        margin-left: 70px;
+    }
+    .elemen_3{
+        margin-left: 200px;
+    }
+} 
+@media(max-width: 1220px){
+    .elemen_2, .elemen_3{
+        opacity: 0;
+        transition: 0.9s ease-in-out;
+    }
+    .hidden-md{
+        display: none;
+    }
+    .card-layanan{
+        height: 45%;
+    }
+} 
+
+@media(max-width: 1200px){
+    .elemen_1{
+        width: 180px;
+        height: 180px;
+    }
+    .title{
+        font-size: 48px;
+        transform: translateY(-155%);
+        margin-left: 50px;
+    }
+    .elemen_3{
+        margin-left: 180px;
+    }
+} 
+
+@media(max-width: 991px){
+    .title{
+        margin-left: 140px;
+    }
+    .card-body{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .card{
+        padding: 18px;
+    }
+
+} 
+
+@media(max-width: 767px){
+    .elemen_1{
+        width: 150px;
+        height: 150px;
+    }
+    .title{
+        font-size: 48px;
+        transform: translateY(-415%);
+        margin-left: 160px;
+    }
+    .box{
+        transform: translateY(-14%);
+    }
+    .card-layanan{
+        height: 95%;
+    }
+} 
+
+
+@media(max-width: 510px){
+    .elemen_1, .elemen_2{
+        opacity: 0;
+    }
+    .title{
+        /* font-size: 38px;
+        transform: translateY(-505%); */
+        margin-left: 0px;
+    }
+    .box{
+        transform: translateY(-19%);
+    }
+} 
+
+@media(max-width: 400px){
+    .title{
+        font-size: 37px;
+        margin-left: 0px;
+        transform: translateY(-515%);
+    }
+    .elemen_1, .elemen_2{
+        opacity: 0;
+    }
+    .box{
+        transform: translateY(-18%);
+    }
+
+    .card-body{
+        font-size: 16px;
+    }
+} 

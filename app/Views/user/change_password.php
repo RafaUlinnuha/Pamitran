@@ -13,18 +13,26 @@
 <?= $this->extend('/layout/base'); ?>
 
 <?= $this->section('custom_css') ?>
+<link rel="stylesheet" href="<?= base_url('assets/css/profile.css') ?>">   
     <link rel="stylesheet" href="<?= base_url('assets/css/edit.css') ?>">
 <?= $this->endSection('custom_css') ?>
 
 <?= $this->section('content'); ?>
+<div class="header"></div>
+
 <div class="form-bg">
-    <div class="container px-4 my-4">
+    <div class="container px-4">
         <div class="row">
-            <div class="col-xl-8 mx-auto my-4">
-                <div class="card xl-4">
-                    <div class="text-center py-4">
-                        <h3 class="mb-4">Ubah Kata Sandi</h3>
-                    </div>
+            <div class="col-lg-2 col-md-1 col-sm-1">
+                <img src="<?= base_url('assets/img/profile.png') ?>" class="elemen_1" alt="gallery">
+            </div>
+            <div class="col-lg-6 col-md-8 mx-2">
+                <h3 class="title">Ubah Kata Sandi</h3>
+            </div>
+        </div>
+        <div class="row box">
+            <div class="col-lg-6 col-md-10 mx-auto">
+                <div class="card card-profile">
                     <div class="card-body">
                         <form action="<?= base_url('change-password'); ?>" method="POST" class="form-container user" autocomplete="off">
                             <?= csrf_field(); ?>
@@ -47,9 +55,8 @@
                                 <input class="form-control" id="repeat_password" name="repeat_password" type="password"  placeholder="Masukkan Ulang Kata Sandi Baru">
                                 <span class="text-danger"><?= isset($validation) ? display_error($validation, 'repeat_password') : '' ?></span>
                             </div>
-                            <div class="form-group" style="float: right;">
-                                <a href="/user" class="cancel"> Cancel</a>
-                                <button type="submit" class="btn btn-primary btn-user btn-block m-1">
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-user btn-block m-1">
                                     Ubah Kata Sandi
                                 </button>
                             </div>
