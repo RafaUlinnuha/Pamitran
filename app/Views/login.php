@@ -34,7 +34,7 @@
                                         </div>
                                         <br>
                                         <div class="text-center mt-4 p-2">
-                                            <button type="submit" class="btn btn-primary btn-user btn-block">
+                                            <button type="submit" class="btn btn-user btn-block">
                                                 Login
                                             </button>
                                         </div>
