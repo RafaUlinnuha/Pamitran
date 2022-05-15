@@ -53,7 +53,7 @@
                             </fieldset>
                             <div class="form-group row mb-4 mt-3">
                                 <label class="mb-2 text-center" for="jenis_layanan" style="font-weight: bold;">Pilih Layanan</label>
-                                <div class="col-sm-6 mt-1">
+                                <div class="col-sm-6 mt-2">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" name="jenis_layanan[]" id="jenis_layanan" value="Konsultasi Pemilihan Jurnal Scopus / WoS">
                                         <span class="form-check-label">
@@ -62,7 +62,7 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="col-sm-6 mt-1">
+                                <div class="col-sm-6 mt-2">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" name="jenis_layanan[]" id="jenis_layanan" value="Konsultasi Penulisan Artikel Ilmiah">
                                         <span class="form-check-label">
@@ -71,7 +71,7 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="col-sm-6 mt-1">
+                                <div class="col-sm-6 mt-2">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" name="jenis_layanan[]" id="jenis_layanan" value="Layouting Artikel sesuai jurnal">
                                         <span class="form-check-label">
@@ -80,7 +80,7 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="col-sm-6 mt-1">
+                                <div class="col-sm-6 mt-2">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" name="jenis_layanan[]" id="jenis_layanan" value="Proofread dengan Proofers.co.uk">
                                         <span class="form-check-label">
@@ -89,7 +89,7 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="col-sm-6 mt-1">
+                                <div class="col-sm-6 mt-2">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" name="jenis_layanan[]" id="jenis_layanan" value="Proses pendampingan publikasi (submission, revisi, korespondensi)">
                                         <span class="form-check-label">
@@ -98,7 +98,7 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="col-sm-6 mt-1">
+                                <div class="col-sm-6 mt-2">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" name="jenis_layanan[]" id="jenis_layanan" value="Cek plagiarism">
                                         <span class="form-check-label">
@@ -107,7 +107,7 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="col-sm-6 mt-1">
+                                <div class="col-sm-6 mt-2">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" name="jenis_layanan[]" id="jenis_layanan" value="Perbaikan revisi manuscript">
                                         <span class="form-check-label">
@@ -116,7 +116,7 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="col-sm-6 mt-1">
+                                <div class="col-sm-6 mt-2">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" name="jenis_layanan[]" id="jenis_layanan" value="Referencing style (mendeley)">
                                         <span class="form-check-label">
@@ -125,7 +125,7 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="col-sm-6 mt-1">
+                                <div class="col-sm-6 mt-2">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" name="jenis_layanan[]" id="jenis_layanan" value="Translate artikel">
                                         <span class="form-check-label">
@@ -134,12 +134,21 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="col-sm-6 mt-1">
+                                <div class="col-sm-6 mt-2">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" name="jenis_layanan[]" id="jenis_layanan" value="Penulisan manuscript ilmiah (abstract, latar belakang, metode, hasil, diskusi, kesimpulan)">
                                         <span class="form-check-label">
-                                        Penulisan manuscript ilmiah (abstract, latar belakang, metode, hasil, diskusi, kesimpulan) 
-                                        <br>(Rp 2.500.000/paket)
+                                            Penulisan manuscript ilmiah (abstract, latar belakang, metode, hasil, diskusi, kesimpulan) 
+                                            <br>(Rp 2.500.000/paket)
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mt-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="jenis_layanan[]" id="jenis_layanan" value="Translate artikel">
+                                        <span class="form-check-label">   
+                                        Searching / Pemesanan Artikel 
+                                        <br>(Rp 25.000/artikel)
                                         </span>
                                     </div>
                                 </div>

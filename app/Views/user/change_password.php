@@ -13,7 +13,7 @@
 <?= $this->extend('/layout/base'); ?>
 
 <?= $this->section('custom_css') ?>
-<link rel="stylesheet" href="<?= base_url('assets/css/profile.css') ?>">   
+    <link rel="stylesheet" href="<?= base_url('assets/css/profile.css') ?>">   
     <link rel="stylesheet" href="<?= base_url('assets/css/edit.css') ?>">
 <?= $this->endSection('custom_css') ?>
 
@@ -26,8 +26,8 @@
             <div class="col-lg-2 col-md-1 col-sm-1">
                 <img src="<?= base_url('assets/img/profile.png') ?>" class="elemen_1" alt="gallery">
             </div>
-            <div class="col-lg-6 col-md-8 mx-2">
-                <h3 class="title">Ubah Kata Sandi</h3>
+            <div class="col-lg-7 col-md-10 mx-2">
+                <h3 class="title-changepass">Ubah Kata Sandi</h3>
             </div>
         </div>
         <div class="row box">

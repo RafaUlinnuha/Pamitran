@@ -61,7 +61,6 @@ section{
     margin-right: 132px;
 }
 
-
 .title{
     text-transform: uppercase;
     font-size: 72px;
@@ -72,7 +71,6 @@ section{
     content: ""; 
     display: block; 
     width: 100%; 
-    padding-top: 20px; 
     border-bottom: 3px solid black; 
 }
 
@@ -86,7 +84,7 @@ section{
 }
 
 .elemen_3{
-   
+    margin-top: 16px;
 }
 
 

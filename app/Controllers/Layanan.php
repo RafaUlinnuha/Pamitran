@@ -140,12 +140,12 @@ class Layanan extends BaseController
         return view('layanan/Laboratorium', $data);
     }
 
-    public function Conference_Rooms()
+    public function Conference_Room()
     {
         $data = [
-            'title' => 'Conference Rooms'
+            'title' => 'Conference Room'
         ];
-        return view('layanan/Conference_Rooms', $data);
+        return view('layanan/Conference_Room', $data);
     }
 
 

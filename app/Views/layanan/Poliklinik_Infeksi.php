@@ -6,7 +6,7 @@
 <?= $this->endSection('custom_css') ?>
 
 <?= $this->section('content'); ?>
-    <img src="<?= base_url('assets/img/gallery/elemen1.png') ?>" class="elemen_1">
+    <img src="<?= base_url('assets/img/layanan/ijo_outline_1.png') ?>" class="elemen_1">
 
     <section class="layanan mt-5">
         <div class="container">
@@ -25,5 +25,5 @@
         </div>
     </section>
 
-    <img src="<?= base_url('assets/img/gallery/elemen1.png') ?>" class="elemen_2">
+    <img src="<?= base_url('assets/img/layanan/ijo_outline_1.png') ?>" class="elemen_2">
 <?= $this->endSection('content'); ?>

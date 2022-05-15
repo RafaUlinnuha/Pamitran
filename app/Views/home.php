@@ -69,22 +69,23 @@
         </div>
     </section>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 210"><path fill="#e7cf7a" fill-opacity="0.4" d="M0,128L1440,64L1440,320L0,320Z"></path></svg>
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 210"><path fill="#e7cf7a" fill-opacity="1" d="M0,64L40,64C80,64,160,64,240,90.7C320,117,400,171,480,165.3C560,160,640,96,720,85.3C800,75,880,117,960,122.7C1040,128,1120,96,1200,74.7C1280,53,1360,43,1400,37.3L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg> -->
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 210"><path fill="#e7cf7a" fill-opacity="0.4" d="M0,128L1440,64L1440,320L0,320Z"></path></svg> -->
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 210"><path fill="#e7cf7a" fill-opacity="0.4" d="M0,64L40,64C80,64,160,64,240,90.7C320,117,400,171,480,165.3C560,160,640,96,720,85.3C800,75,880,117,960,122.7C1040,128,1120,96,1200,74.7C1280,53,1360,43,1400,37.3L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg> -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 110 1440 210"><path fill="#e7cf7a" fill-opacity="0.5" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     
     <section class="services text-center">
         <div class="container container-home p-5">
             <h1  class="title layanan_title">LAYANAN</h1>
             <div class="reveal">
                 <div class="row layanan_text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis urna sed vulputate urna iaculis tristique. Erat turpis ultrices in posuere est. Venenatis ante in vivamus tristique elit tempor. Iaculis in sit sed enim odio. Risus, eu morbi libero quis sit sed mattis nulla. Amet fusce pellentesque sodales pellentesque morbi. Ultricies tincidunt imperdiet sit non dolor at. Urna vel lobortis mauris venenatis, at a dolor.</p>
+                    <p>Inovasi, Pengembangan, dan Layanan Kesehatan di PAMITRAN-UP berkualitas prima, terpadu, terintegrasi, unggul, terdepan, multidisplin, dan berorientasi untuk masyarakat dan bangsa. Layanan meliputi: </p>
                 </div>
                 <div class="row pt-3">
                     <div class="col-12 col-lg-3 col-md-6 mb-4">
                         <div class="card card-1">
                             <div class="card-body d-flex flex-column">
                                 <h4 class="card-title">Endoskopi Training Center</h4>
-                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Endoskopi-Training-Center'">Read More</button>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/endoskopi-training-center'">Read More</button>
                             </div>
                         </div>
                     </div>
@@ -93,7 +94,7 @@
                         <div class="card card-2">
                             <div class="card-body d-flex flex-column">
                                 <h4 class="card-title">Dental Training Center</h4>
-                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Dental-Training-Center'">Read More</button>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/dental-training-center'">Read More</button>
                             </div>
                         </div>
                     </div>
@@ -102,7 +103,7 @@
                         <div class="card card-3">
                             <div class="card-body d-flex flex-column">
                                 <h4 class="card-title">OSCE Training Center</h4>
-                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/OSCE-Training-Center'">Read More</button>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/osce-training-center'">Read More</button>
                             </div>
                         </div>
                     </div>
@@ -111,7 +112,7 @@
                         <div class="card card-4">
                             <div class="card-body d-flex flex-column">
                                 <h4 class="card-title">Publication Services</h4>
-                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Pamitran-Publication-Services'">Read More</button>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/pamitran-publication-services'">Read More</button>
                             </div>
                         </div>
                     </div>
@@ -122,7 +123,7 @@
                         <div class="card card-5">
                             <div class="card-body d-flex flex-column">
                                 <h4 class="card-title">Kerjasama Penelitian</h4>
-                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Kerjasama-Penelitian'">Read More</button>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/kerjasama-penelitian'">Read More</button>
                             </div>
                         </div>
                     </div>
@@ -131,7 +132,7 @@
                         <div class="card card-6">
                             <div class="card-body d-flex flex-column">
                                 <h4 class="card-title">Apotik Pendidikan</h4>
-                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Apotik-Pendidikan'">Read More</button>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/apotik-pendidikan'">Read More</button>
                             </div>
                         </div>
                     </div>
@@ -140,7 +141,7 @@
                         <div class="card card-7">
                             <div class="card-body d-flex flex-column">
                                 <h4 class="card-title ">Puspa Daycare</h4>
-                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Puspa-Day-Care'">Read More</button>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/puspa-daycare'">Read More</button>
                             </div>
                         </div>
                     </div>
@@ -149,7 +150,7 @@
                         <div class="card card-8">
                             <div class="card-body d-flex flex-column">
                                 <h4 class="card-title">Kemoterapi</h4>
-                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Kemoterapi'">Read More</button>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/kemoterapi'">Read More</button>
                             </div>
                         </div>
                     </div>
@@ -160,7 +161,7 @@
                         <div class="card card-9">
                             <div class="card-body d-flex flex-column">
                                 <h4 class="card-title">Perawatan Covid</h4>
-                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Perawatan-Covid'">Read More</button>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/perawatan-covid'">Read More</button>
                             </div>
                         </div>
                     </div>
@@ -169,7 +170,7 @@
                         <div class="card card-10">
                             <div class="card-body d-flex flex-column">
                                 <h4 class="card-title">Palliative Care</h4>
-                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Palliative-Care'">Read More</button>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/palliative-care'">Read More</button>
                             </div>
                         </div>
                     </div>
@@ -178,7 +179,7 @@
                         <div class="card card-11">
                             <div class="card-body d-flex flex-column">
                                 <h4 class="card-title">Poliklinik Infeksi</h4>
-                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Poliklinik-Infeksi'">Read More</button>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/poliklinik-infeksi'">Read More</button>
                             </div>
                         </div>
                     </div>
@@ -187,7 +188,7 @@
                         <div class="card card-12">
                             <div class="card-body d-flex flex-column">
                                 <h4 class="card-title">Pojok Lansia</h4>
-                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Pojok-Lansia'">Read More</button>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/pojok-lansia'">Read More</button>
                             </div>
                         </div>
                     </div>
@@ -198,7 +199,7 @@
                         <div class="card card-13">
                             <div class="card-body d-flex flex-column">
                                 <h4 class="card-title">Cafe dan Restoran</h4>
-                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Cafe-dan-Restoran'">Read More</button>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/cafe-dan-restoran'">Read More</button>
                             </div>
                         </div>
                     </div>
@@ -207,7 +208,7 @@
                         <div class="card card-14">
                             <div class="card-body d-flex flex-column">
                                 <h4 class="card-title">ATM Center</h4>
-                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/ATM-Center'">Read More</button>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/atm-center'">Read More</button>
                             </div>
                         </div>
                     </div>
@@ -216,7 +217,7 @@
                         <div class="card card-15">
                             <div class="card-body d-flex flex-column">
                                 <h4 class="card-title">Laboratorium</h4>
-                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Laboratorium'">Read More</button>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/laboratorium'">Read More</button>
                             </div>
                         </div>
                     </div>
@@ -225,7 +226,7 @@
                         <div class="card card-16">
                             <div class="card-body d-flex flex-column">
                                 <h4 class="card-title">Conference Rooms</h4>
-                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/Conference-Rooms'">Read More</button>
+                                <button class="align-self-end btn btn-outline-dark mt-auto" onclick="document.location='/conference-room'">Read More</button>
                             </div>
                         </div>
                     </div>
@@ -234,10 +235,11 @@
         </div>
     </section>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 210"><path fill="#e7cf7a" fill-opacity="0.4" d="M0,128L1440,64L1440,0L0,0Z"></path></svg>
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 210"><path fill="#e7cf7a" fill-opacity="0.4" d="M0,128L1440,64L1440,0L0,0Z"></path></svg> -->
 
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 210"><path fill="#e7cf7a" fill-opacity="1" d="M0,64L40,64C80,64,160,64,240,90.7C320,117,400,171,480,165.3C560,160,640,96,720,85.3C800,75,880,117,960,122.7C1040,128,1120,96,1200,74.7C1280,53,1360,43,1400,37.3L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg> -->
-    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 210"><path fill="#e7cf7a" fill-opacity="0.5" d="M0,64L40,64C80,64,160,64,240,90.7C320,117,400,171,480,165.3C560,160,640,96,720,85.3C800,75,880,117,960,122.7C1040,128,1120,96,1200,74.7C1280,53,1360,43,1400,37.3L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+     -->
 
     <section class="video text-center p-5">
         <div class="container container-home">

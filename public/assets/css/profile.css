@@ -14,7 +14,6 @@
     line-height: 36px;
 }
 
-
 .card-layanan{
     padding: 30px 32px;
     height: 30%;
@@ -31,7 +30,7 @@ button{
 }
 
 .box{
-    transform: translateY(-15%);
+    transform: translateY(-18%);
 }
 
 .header{
@@ -56,7 +55,7 @@ button{
     margin-left: 280px;
 }
 
-.title{
+.title, .title-changepass, .title-edit{
     font-size: 60px;
     font-weight: 800;
     transform: translateY(-140%);
@@ -64,11 +63,12 @@ button{
     margin-left: 30px;
 }
 
+
 @media(max-width: 1400px){
     .card-layanan{
         padding: 20px 52px;
     }
-    .title{
+    .title, .title-changepass, .title-edit{
         margin-left: 70px;
     }
     .elemen_3{
@@ -93,7 +93,7 @@ button{
         width: 180px;
         height: 180px;
     }
-    .title{
+    .title, .title-changepass, .title-edit{
         font-size: 48px;
         transform: translateY(-155%);
         margin-left: 50px;
@@ -111,6 +111,9 @@ button{
         font-size: 18px;
         line-height: 28px;
     }
+    .title-changepass, .title-edit{
+        margin-left: 150px;
+    }
     .card{
         padding: 18px;
     }
@@ -119,16 +122,17 @@ button{
 
 @media(max-width: 767px){
     .elemen_1{
-        width: 150px;
-        height: 150px;
+        opacity: 0;
     }
     .title{
         font-size: 48px;
-        transform: translateY(-415%);
-        margin-left: 160px;
+        transform: translateY(-475%);
+        margin-left: 0px;
     }
-    .box{
-        transform: translateY(-14%);
+    .title-changepass, .title-edit{
+        font-size: 48px;
+        transform: translateY(-435%);
+        margin-left: 0px;
     }
     .card-layanan{
         height: 95%;
@@ -140,10 +144,15 @@ button{
     .elemen_1, .elemen_2{
         opacity: 0;
     }
-    .title{
-        /* font-size: 38px;
-        transform: translateY(-505%); */
+    .title, .title-edit{
+        font-size: 38px;
+        transform: translateY(-555%);
         margin-left: 0px;
+    }
+    .title-changepass{
+        font-size: 38px;
+        margin-left: 0px;
+        transform: translateY(-505%);
     }
     .box{
         transform: translateY(-19%);
@@ -151,10 +160,15 @@ button{
 } 
 
 @media(max-width: 400px){
-    .title{
+    .title, .title-edit{
         font-size: 37px;
         margin-left: 0px;
-        transform: translateY(-515%);
+        transform: translateY(-565%);
+    }
+    .title-changepass{
+        font-size: 40px;
+        margin-left: 0px;
+        transform: translateY(-305%);
     }
     .elemen_1, .elemen_2{
         opacity: 0;

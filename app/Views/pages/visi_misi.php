@@ -27,7 +27,12 @@
                 </div>
                 <div class="col col-lg-7 col-md-12 col-sm-9 max-md">
                     <h3 class="title">Misi</h3>
-                    <p class="misi">Menjadi pusat inovasi dan pengembangan kesehatan terintegrasi guna menyiapkan sumber daya insani dan teknologi baru yang berdampak pada masyarakat.</p>
+                    <p class="misi">Meningkatkan kualitas dan kompetensi lulusan rumpun ilmu kesehatan UNPAD. <br>
+                    Mendiseminasikan perkembangan keilmuan kesehatan termutakhir bagi masyarakat. <br>
+                    Menciptakan inovasi dan meningkatkan kerjasama riset guna menjawab persoalan-persoalan kesehatan masyarakat. <br>
+                    Meningkatkan kualitas pelayanan kesehatan yang terintegrasi bagi masyarakat Jawa Barat dan Indonesia. <br>
+                    Menyelenggarakan berbagai kegiatan korporasi akademik guna mendukung kemandirian institusi. <br>
+                    </p>
                 </div>
             </div>
             <div class="row box p-5">

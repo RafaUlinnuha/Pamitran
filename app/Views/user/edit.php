@@ -24,7 +24,7 @@
                 <img src="<?= base_url('assets/img/profile.png') ?>" class="elemen_1" alt="gallery">
             </div>
             <div class="col-lg-6 col-md-8 mx-2">
-                <h3 class="title">Ubah Profil</h3>
+                <h3 class="title-edit">Ubah Profil</h3>
             </div>
         </div>
         <div class="row box">
